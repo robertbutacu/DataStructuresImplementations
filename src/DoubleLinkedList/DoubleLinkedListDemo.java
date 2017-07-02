@@ -5,7 +5,7 @@ import com.sun.org.apache.regexp.internal.RE;
 /**
  * Created by Robert-PC on 7/2/2017.
  */
-public class Demo {
+public class DoubleLinkedListDemo {
 
     //TODO Optional[DoubleLinkedList] in DBL class and refactor to not work with null
 
@@ -58,7 +58,7 @@ public class Demo {
         listPrinter.printInfo();
     }
 
-    public Demo(){
+    public DoubleLinkedListDemo(){
 
     }
 }

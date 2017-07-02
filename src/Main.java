@@ -1,4 +1,4 @@
-import DoubleLinkedList.Demo;
+import DoubleLinkedList.DoubleLinkedListDemo;
 
 public class  Main {
 
@@ -6,9 +6,9 @@ public class  Main {
 
     public static void main(String[] args) {
 
-        Demo demo = new Demo();
+        DoubleLinkedListDemo doubleLinkedListDemo = new DoubleLinkedListDemo();
 
-        demo.getDemo();
+        doubleLinkedListDemo.getDemo();
 
     }
 }
