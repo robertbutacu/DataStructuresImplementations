@@ -14,6 +14,13 @@ public class DoubleLinkedList {
 
     private int familyCount;
 
+    private int wealth;
+
+    private DoubleLinkedList previous;
+
+    private DoubleLinkedList next;
+
+
     public int getID() {
         return ID;
     }
@@ -59,11 +66,7 @@ public class DoubleLinkedList {
         this.next = next;
     }
 
-    private int wealth;
 
-    private DoubleLinkedList previous;
-
-    private DoubleLinkedList next;
 
 
     //insertion

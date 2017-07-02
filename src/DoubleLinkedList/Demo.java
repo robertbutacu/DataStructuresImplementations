@@ -7,6 +7,8 @@ import com.sun.org.apache.regexp.internal.RE;
  */
 public class Demo {
 
+    //TODO Optional[DoubleLinkedList] in DBL class and refactor to not work with null
+
 
     public void getDemo(){
         DoubleLinkedListManager linkedListManager;
