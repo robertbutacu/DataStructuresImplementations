@@ -1,4 +1,5 @@
 import DoubleLinkedList.DoubleLinkedListDemo;
+import Stack.StackDemo;
 
 public class  Main {
 
@@ -6,9 +7,10 @@ public class  Main {
 
     public static void main(String[] args) {
 
-        DoubleLinkedListDemo doubleLinkedListDemo = new DoubleLinkedListDemo();
+        //DoubleLinkedListDemo doubleLinkedListDemo = new DoubleLinkedListDemo();
 
-        doubleLinkedListDemo.getDemo();
+        //doubleLinkedListDemo.getDemo();
 
+        StackDemo stackDemo = new StackDemo(3);
     }
 }
