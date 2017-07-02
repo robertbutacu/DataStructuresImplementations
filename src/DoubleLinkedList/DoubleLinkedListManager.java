@@ -12,41 +12,20 @@ public class DoubleLinkedListManager {
         this.tail = head;
     }
 
+    public DoubleLinkedList getHead() {
+        return head;
+    }
+
+    public DoubleLinkedList getTail() {
+        return tail;
+    }
+
     public DoubleLinkedListManager(){
 
     }
 
     //TODO single responsability principle : this class manages AND prints info. split into 2 classes.
 
-    public void printInfo(){
-        DoubleLinkedList iterator = head;
-
-        if(iterator == null){
-            System.out.println("The Double Linked List is empty.");
-        }
-
-        while(iterator != null){
-            System.out.println("House ID " +
-                    iterator.getID() +
-                    ". Street Name " +
-                    iterator.getStreetName() +
-                    ". Wealth :" +
-                    iterator.getWealth());
-            if(iterator.getNext() != null)
-                System.out.println("Front neighbour ID : " + iterator.getNext().getID());
-            else
-                System.out.println("No front neighbour.");
-
-            if(iterator.getPrevious() != null)
-                System.out.println("Back neighbour ID : " + iterator.getPrevious().getID());
-            else
-                System.out.println("No back neighbour.");
-
-            System.out.println("\n\n\n");
-            iterator = iterator.getNext();
-        }
-
-    }
 
     public boolean insertHouseAfterPosition(int position, DoubleLinkedList toBeInserted){
         if(position < 0)

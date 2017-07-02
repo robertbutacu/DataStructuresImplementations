@@ -24,23 +24,26 @@ public class Demo {
         linkedListManager.add(fourthHouse);
         linkedListManager.add(fifthHouse);
 
+        DoubleLinkedListPrinter listPrinter = new DoubleLinkedListPrinter(linkedListManager);
         System.out.println("First");
-        linkedListManager.printInfo();
+        listPrinter.printInfo();
 
         DoubleLinkedList randomHouse = new DoubleLinkedList("Really Random", 2, 12312);
         linkedListManager.insertHouseAfterPosition(3,randomHouse);
 
         System.out.println("Second");
-        linkedListManager.printInfo();
+        listPrinter.printInfo();
 
         System.out.println("Third");
         linkedListManager.deleteHouseById(4);
-        linkedListManager.printInfo();
+        listPrinter.printInfo();
 
         //testing empty double list
         DoubleLinkedListManager anotherLinkedListManager = new DoubleLinkedListManager();
 
-        anotherLinkedListManager.printInfo();
+        listPrinter.setDoubleLinkedListManager(anotherLinkedListManager);
+
+        listPrinter.printInfo();
 
         DoubleLinkedList newHouse = new DoubleLinkedList("Random", 3, 123);
 
@@ -50,7 +53,7 @@ public class Demo {
 
         anotherLinkedListManager.add(newHouse);
 
-        anotherLinkedListManager.printInfo();
+        listPrinter.printInfo();
     }
 
     public Demo(){

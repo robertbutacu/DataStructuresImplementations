@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84f14702-2004-40df-87c6-b0c2efe87d91" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DoubleLinkedList/DoubleLinkedListPrinter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DoubleLinkedList/Demo.java" afterPath="$PROJECT_DIR$/src/DoubleLinkedList/Demo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DoubleLinkedList/DoubleLinkedListManager.java" afterPath="$PROJECT_DIR$/src/DoubleLinkedList/DoubleLinkedListManager.java" />
@@ -30,9 +31,24 @@
       <file leaf-file-name="Demo.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DoubleLinkedList/Demo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="39" column="35" lean-forward="false" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+            <state relative-caret-position="141">
+              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DoubleLinkedListPrinter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DoubleLinkedList/DoubleLinkedListPrinter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="906">
+              <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+              <folding>
+                <element signature="e#361#362#0" expanded="true" />
+                <element signature="e#412#413#0" expanded="true" />
+                <element signature="e#1500#1501#0" expanded="true" />
+                <element signature="e#1546#1547#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,9 +89,14 @@
       <file leaf-file-name="DoubleLinkedListManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DoubleLinkedList/DoubleLinkedListManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="24" column="64" lean-forward="false" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
-              <folding />
+            <state relative-caret-position="306">
+              <caret line="18" column="11" lean-forward="false" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+              <folding>
+                <element signature="e#338#339#0" expanded="true" />
+                <element signature="e#365#366#0" expanded="true" />
+                <element signature="e#406#407#0" expanded="true" />
+                <element signature="e#433#434#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -104,6 +125,7 @@
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/DoubleLinkedList/DoubleLinkedList.java" />
         <option value="$PROJECT_DIR$/src/DoubleLinkedList/DoubleLinkedListManager.java" />
+        <option value="$PROJECT_DIR$/src/DoubleLinkedList/DoubleLinkedListPrinter.java" />
         <option value="$PROJECT_DIR$/src/DoubleLinkedList/Demo.java" />
       </list>
     </option>
@@ -625,7 +647,7 @@
       <updated>1498906027477</updated>
       <workItem from="1498906038460" duration="1287000" />
       <workItem from="1498943431311" duration="7644000" />
-      <workItem from="1498984737968" duration="684000" />
+      <workItem from="1498984737968" duration="1206000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1498906815541</created>
@@ -648,11 +670,18 @@
       <option name="project" value="LOCAL" />
       <updated>1498949857336</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Manager supports empty Linked Lists.">
+      <created>1498985457424</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1498985457424</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9615000" />
+    <option name="totallyTimeSpent" value="10137000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -668,7 +697,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1340694" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2192429" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -699,7 +728,8 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Double Linked List Added." />
     <MESSAGE value="Double Linked List Manager Added." />
-    <option name="LAST_COMMIT_MESSAGE" value="Double Linked List Manager Added." />
+    <MESSAGE value="Manager supports empty Linked Lists." />
+    <option name="LAST_COMMIT_MESSAGE" value="Manager supports empty Linked Lists." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -761,7 +791,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#338#339#0" expanded="true" />
+            <element signature="e#365#366#0" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+            <element signature="e#433#434#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -814,16 +849,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DoubleLinkedList/DoubleLinkedListManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="24" column="64" lean-forward="false" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
-          <folding />
+        <state relative-caret-position="306">
+          <caret line="18" column="11" lean-forward="false" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+          <folding>
+            <element signature="e#338#339#0" expanded="true" />
+            <element signature="e#365#366#0" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+            <element signature="e#433#434#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DoubleLinkedList/DoubleLinkedListPrinter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="906">
+          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding>
+            <element signature="e#361#362#0" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
+            <element signature="e#1500#1501#0" expanded="true" />
+            <element signature="e#1546#1547#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DoubleLinkedList/Demo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="39" column="35" lean-forward="false" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+        <state relative-caret-position="141">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding />
         </state>
       </provider>
