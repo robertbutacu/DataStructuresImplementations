@@ -24,8 +24,6 @@ public class DoubleLinkedListManager {
 
     }
 
-    //TODO single responsability principle : this class manages AND prints info. split into 2 classes.
-
 
     public boolean insertHouseAfterPosition(int position, DoubleLinkedList toBeInserted){
         if(position < 0)
