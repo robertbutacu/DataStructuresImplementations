@@ -12,8 +12,18 @@ public class DoubleLinkedListManager {
         this.tail = head;
     }
 
+    public DoubleLinkedListManager(){
+
+    }
+
+    //TODO single responsability principle : this class manages AND prints info. split into 2 classes.
+
     public void printInfo(){
         DoubleLinkedList iterator = head;
+
+        if(iterator == null){
+            System.out.println("The Double Linked List is empty.");
+        }
 
         while(iterator != null){
             System.out.println("House ID " +
@@ -68,6 +78,13 @@ public class DoubleLinkedListManager {
     }
 
     public void add(DoubleLinkedList newItem){
+        //null list
+        if(this.head == null){
+            this.head = newItem;
+            this.tail = newItem;
+            return;
+        }
+
         newItem.setPrevious(tail);
         newItem.setNext(null);
         tail.setNext(newItem);

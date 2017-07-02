@@ -36,6 +36,21 @@ public class Demo {
         System.out.println("Third");
         linkedListManager.deleteHouseById(4);
         linkedListManager.printInfo();
+
+        //testing empty double list
+        DoubleLinkedListManager anotherLinkedListManager = new DoubleLinkedListManager();
+
+        anotherLinkedListManager.printInfo();
+
+        DoubleLinkedList newHouse = new DoubleLinkedList("Random", 3, 123);
+
+        anotherLinkedListManager.add(newHouse);
+
+        newHouse = new DoubleLinkedList("Random Again", 123,123);
+
+        anotherLinkedListManager.add(newHouse);
+
+        anotherLinkedListManager.printInfo();
     }
 
     public Demo(){
