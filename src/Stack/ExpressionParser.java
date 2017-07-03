@@ -2,6 +2,7 @@ package Stack;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Optional;
 
 /**
  * Created by Robert-PC on 7/3/2017.
@@ -33,7 +34,9 @@ public class ExpressionParser {
                 stackArray.push(current);
             }
 
-            if(separators.containsValue(current) && (reversedSeparators.get(current) != stackArray.top()))
+            if(separators.containsValue(current) &&
+                    (stackArray.top().isPresent() &&
+                            reversedSeparators.get(current) != stackArray.top().get()))
                 return false;
 
         }
