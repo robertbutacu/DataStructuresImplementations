@@ -1,8 +1,6 @@
 package Stack;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Optional;
 
 /**
  * Created by Robert-PC on 7/2/2017.
@@ -29,36 +27,45 @@ public class StackArrayImpl<T> {
     private T[] stack;
 
 
-    public StackArrayImpl( int size){
+    public StackArrayImpl(int size) {
         stack = (T[]) new Object[size];
         this.stackSize = size;
     }
 
 
-    public T push(T element){
-        if((currentPosition + 1) == stackSize){
+    public Optional<T> push(T element) {
+        if ((currentPosition + 1) == stackSize) {
             return this.top();
         }
         currentPosition += 1;
         stack[currentPosition] = element;
-        return stack[currentPosition];
+        return Optional.ofNullable(stack[currentPosition]);
 
     }
 
 
-    public T pop(){
-        if(currentPosition == -1 ){
-            return null;
+    public Optional<T> pop() {
+        try {
+            return Optional.ofNullable(stack[--currentPosition+1]);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            currentPosition += 1;
+            return Optional.empty();
+
         }
 
-        currentPosition -= 1;
-        return stack[currentPosition+1];
     }
 
-    public T top(){
-        if(currentPosition == -1){
-            return null;
+    public Optional<T> top() {
+        if (currentPosition == -1) {
+            return Optional.empty();
         }
-        return stack[currentPosition];
+        try{
+            return Optional.ofNullable(stack[currentPosition]);
+        }
+        catch(IndexOutOfBoundsException e){
+            return Optional.empty();
+
+        }
+
     }
 }

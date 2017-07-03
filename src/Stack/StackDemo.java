@@ -9,16 +9,16 @@ public class StackDemo {
     private StackArrayImpl stackArrayImplDemo;
 
     public StackDemo(int size){
-        stackArrayImplDemo = new StackArrayImpl<Character>(size);
+        stackArrayImplDemo = new StackArrayImpl<Integer>(size);
 
-        System.out.println("Push : " + stackArrayImplDemo.push("a"));
-        System.out.println("Push : " + stackArrayImplDemo.push("b"));
-        System.out.println("Push : " + stackArrayImplDemo.push("c"));
+        System.out.println("Push : " + stackArrayImplDemo.push(1).get());
+        System.out.println("Push : " + stackArrayImplDemo.push(2).get());
+        System.out.println("Push : " + stackArrayImplDemo.push(3).get());
 
-        System.out.println("Popping : " + stackArrayImplDemo.pop());
-        System.out.println("Top : " + stackArrayImplDemo.top());
-        System.out.println("Pushing : " + stackArrayImplDemo.push("abc"));
-        System.out.println("Pushing(should refuse) : " + stackArrayImplDemo.push("abasd"));
+        System.out.println("Popping : " + stackArrayImplDemo.pop().orElse("Empty stack"));
+        System.out.println("Top : " + stackArrayImplDemo.top().orElse("Empty stack"));
+        System.out.println("Pushing : " + stackArrayImplDemo.push(123).get());
+        System.out.println("Pushing(should refuse) : " + stackArrayImplDemo.push(12345).get());
         System.out.println("Top : " + stackArrayImplDemo.top());
 
         System.out.println("Expression parser using stack : ");
@@ -27,6 +27,7 @@ public class StackDemo {
         System.out.println("(2+3){qeqw}[] : " + expressionParser.isCorrect("(2+3){qeqw}[]"));
         System.out.println("(]{}[]() : " + expressionParser.isCorrect("(]{}[]()"));
         System.out.println("){}[] :" + expressionParser.isCorrect("){}[]"));
+
     }
 
 }
