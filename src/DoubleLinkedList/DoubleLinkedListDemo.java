@@ -55,6 +55,7 @@ public class DoubleLinkedListDemo {
 
         anotherLinkedListManager.add(newHouse);
 
+        System.out.println("Length of anotherLinkedListManager : " + anotherLinkedListManager.getLength());
         listPrinter.printInfo();
     }
 
