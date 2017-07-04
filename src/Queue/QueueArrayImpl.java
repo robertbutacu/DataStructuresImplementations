@@ -1,5 +1,7 @@
 package Queue;
 
+import java.util.Optional;
+
 /**
  * Created by Robert-PC on 7/3/2017.
  */
@@ -19,15 +21,49 @@ public class QueueArrayImpl<T> {
 
     }
 
-    public T dequeue(){
+    public boolean isEmpty(){
+        return (front == -1 && rear == -1);
+    }
+
+    public Optional<T> dequeue(){
+        if(isEmpty() ){
+            return Optional.empty();
+        }
+
+        if(front == rear){
+            T result = queue[front];
+            front = -1; rear = -1;
+            return Optional.ofNullable(result);
+
+        }
+
+        T copy = queue[front];
+        front = (front + 1) % queueSize;
+        return Optional.ofNullable(copy);
 
     }
 
-    public void enqueue(){
+    public void enqueue(T element){
+        if(front == -1 && rear == -1){
+            front = 0; rear = 0;
+            queue[front] = element;
+            return;
+        }
+
+        if((rear + 1) % queueSize == front){
+            System.out.println("Queue full. Come back later.");
+            return;
+        }
+        rear = (rear + 1) % queueSize;
+        queue[rear] = element;
 
     }
 
-    public T peek(){
-
+    public Optional<T> peek(){
+        try{
+            return Optional.ofNullable(queue[front]);
+        }catch(ArrayIndexOutOfBoundsException e){
+            return Optional.empty();
+        }
     }
 }
