@@ -20,10 +20,16 @@ public class TreeManager {
     }
 
 
+    public TreeNode getRoot() {
+        return root;
+    }
+
     public TreeNode insert(TreeNode treeNode, int data){
         if(treeNode == null){
             // inserting new node
-            return new TreeNode(data);
+            treeNode =  new TreeNode(data);
+            System.out.println(treeNode.getData());
+            return treeNode;
         }
 
         if(data <= treeNode.getData()){
@@ -43,15 +49,23 @@ public class TreeManager {
     }
 
     private boolean searchData(TreeNode treeNode, int data){
-        if(treeNode.getData() == data)
-            return true;
-
         if(treeNode == null)
             return false;
 
+        if(treeNode.getData() == data){
+            System.out.println("Found");
+            return true;
+
+        }
+
+        System.out.println("Current node data : " + treeNode.getData());
         if(treeNode.getData() > data)
             searchData(treeNode.getLeft(), data);
         else
             searchData(treeNode.getRight(),data);
+
+        return true;
     }
+
+
 }

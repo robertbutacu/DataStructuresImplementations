@@ -1,3 +1,5 @@
+import BinarySearchTree.TreeDemo;
+import BinarySearchTree.TreeManager;
 import DoubleLinkedList.DoubleLinkedListDemo;
 import Queue.QueueDemo;
 import Stack.StackDemo;
@@ -12,10 +14,15 @@ public class  Main {
 
         doubleLinkedListDemo.getDemo();
         */
-        //StackDemo stackDemo = new StackDemo(3);
+        /*StackDemo stackDemo = new StackDemo(3);*/
 
-        QueueDemo queueDemo = new QueueDemo();
+        /*QueueDemo queueDemo = new QueueDemo();
 
         queueDemo.startDemo();
+        */
+
+        TreeDemo treeDemo = new TreeDemo();
+
+        treeDemo.getDemo();
     }
 }
