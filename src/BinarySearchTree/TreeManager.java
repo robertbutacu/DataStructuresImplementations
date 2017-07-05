@@ -37,4 +37,21 @@ public class TreeManager {
         return treeNode;
 
     }
+
+    public boolean search(int data){
+        return searchData(root, data);
+    }
+
+    private boolean searchData(TreeNode treeNode, int data){
+        if(treeNode.getData() == data)
+            return true;
+
+        if(treeNode == null)
+            return false;
+
+        if(treeNode.getData() > data)
+            searchData(treeNode.getLeft(), data);
+        else
+            searchData(treeNode.getRight(),data);
+    }
 }
