@@ -13,17 +13,17 @@ public class TreeDemo {
 
         TreeManager treeManager = new TreeManager();
 
-        treeManager.insert(treeManager.getRoot(),1);
-        treeManager.insert(treeManager.getRoot(),2);
-        treeManager.insert(treeManager.getRoot(),3);
-        treeManager.insert(treeManager.getRoot(),4);
-        treeManager.insert(treeManager.getRoot(),5);
+        treeManager.insert(treeManager.getRoot(),new TreeNode(3));
+        treeManager.insert(treeManager.getRoot(),new TreeNode(1));
+        treeManager.insert(treeManager.getRoot(),new TreeNode(2));
+        treeManager.insert(treeManager.getRoot(),new TreeNode(4));
+        treeManager.insert(treeManager.getRoot(),new TreeNode(5));
 
-        System.out.println(treeManager.search(1));
+        System.out.println("Searching for 1: " + treeManager.search(1));
 
-        System.out.println(treeManager.search(2));
-        System.out.println(treeManager.search(6));
-        System.out.println(treeManager.search(7));
+        System.out.println("Searching for 2: " + treeManager.search(2));
+        System.out.println("Searching for 6: " + treeManager.search(5));
+        System.out.println("Searching for 7: " + treeManager.search(7));
 
 
     }

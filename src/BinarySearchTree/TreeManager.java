@@ -9,7 +9,8 @@ import java.util.Optional;
  */
 public class TreeManager {
 
-    TreeNode root;
+    private TreeNode root;
+
 
     public TreeManager(){
 
@@ -24,20 +25,28 @@ public class TreeManager {
         return root;
     }
 
-    public TreeNode insert(TreeNode treeNode, int data){
-        if(treeNode == null){
-            // inserting new node
-            treeNode =  new TreeNode(data);
-            System.out.println(treeNode.getData());
-            return treeNode;
+
+    public boolean isEmpty(){
+        return this.root == null;
+    }
+
+    public TreeNode insert(TreeNode treeNode, TreeNode newNode){
+        if(isEmpty()){
+            this.root = newNode;
+            return root;
         }
 
-        if(data <= treeNode.getData()){
+        if(treeNode == null){
+            // inserting new node
+            return newNode;
+        }
+
+        if(newNode.getData() <= treeNode.getData()){
             //searching in left side of the tree
-            treeNode.setLeft(insert(treeNode.getLeft(),data));
+            treeNode.setLeft(insert(treeNode.getLeft(),newNode));
         }
         else{
-            treeNode.setRight(insert(treeNode.getRight(),data));
+            treeNode.setRight(insert(treeNode.getRight(),newNode));
         }
 
         return treeNode;
@@ -49,22 +58,22 @@ public class TreeManager {
     }
 
     private boolean searchData(TreeNode treeNode, int data){
-        if(treeNode == null)
+        if(treeNode == null){
             return false;
 
+        }
+
         if(treeNode.getData() == data){
-            System.out.println("Found");
             return true;
 
         }
 
-        System.out.println("Current node data : " + treeNode.getData());
+        System.out.println("Current search for " + data + " : " + treeNode.getData() );
         if(treeNode.getData() > data)
-            searchData(treeNode.getLeft(), data);
+            return searchData(treeNode.getLeft(), data);
         else
-            searchData(treeNode.getRight(),data);
+            return searchData(treeNode.getRight(),data);
 
-        return true;
     }
 
 
