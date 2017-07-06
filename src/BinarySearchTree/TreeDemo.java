@@ -26,5 +26,9 @@ public class TreeDemo {
         System.out.println("Searching for 7: " + treeManager.search(7));
 
 
+        TreeOperations treeOperations = new TreeOperations();
+        System.out.println("Max : " + treeOperations.findMax().orElse("Empty tree"));
+
+        System.out.println("Min : " + treeOperations.findMin().orElse("Empty tree"));
     }
 }

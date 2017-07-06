@@ -23,7 +23,7 @@ public class TreeOperations {
         return 0;
     }
 
-    public Optional<Integer> findMax(){
+    public Optional<String> findMax(){
         TreeNode currentNode = root;
 
         if(currentNode == null){
@@ -31,14 +31,14 @@ public class TreeOperations {
         }
 
         while(currentNode.getRight() != null){
-            currentNode.setRight(currentNode.getRight());
+            currentNode = currentNode.getRight();
         }
 
-        return Optional.of(currentNode.getData());
+        return Optional.of(Integer.toString(currentNode.getData()));
 
     }
 
-    public Optional<Integer> findMin(){
+    public Optional<String> findMin(){
         TreeNode currentNode = root;
 
         if(currentNode == null){
@@ -46,9 +46,9 @@ public class TreeOperations {
         }
 
         while(currentNode.getLeft() != null)
-            currentNode.setLeft(currentNode.getLeft());
+            currentNode = currentNode.getLeft();
 
-        return Optional.of(currentNode.getData());
+        return Optional.of(Integer.toString(currentNode.getData()));
     }
 
     public TreeNode getRoot() {
