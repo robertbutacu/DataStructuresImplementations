@@ -25,7 +25,7 @@ public class TreeOperations {
     }
     private Integer getHeight(TreeNode treeNode){
         if(treeNode == null)
-            return 0;
+            return -1;
 
         int leftHeight = getHeight(treeNode.getLeft());
         int rightHeight = getHeight(treeNode.getRight());

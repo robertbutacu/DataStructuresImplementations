@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="84f14702-2004-40df-87c6-b0c2efe87d91" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BinarySearchTree/TreeDemo.java" afterPath="$PROJECT_DIR$/src/BinarySearchTree/TreeDemo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BinarySearchTree/TreeOperations.java" afterPath="$PROJECT_DIR$/src/BinarySearchTree/TreeOperations.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -88,16 +87,16 @@
       <file leaf-file-name="TreeOperations.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/TreeOperations.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="32" column="78" lean-forward="false" selection-start-line="32" selection-start-column="78" selection-end-line="32" selection-end-column="78" />
+            <state relative-caret-position="39">
+              <caret line="27" column="21" lean-forward="false" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#231#232#0" expanded="true" />
                 <element signature="e#263#264#0" expanded="true" />
-                <element signature="e#1381#1382#0" expanded="true" />
-                <element signature="e#1408#1409#0" expanded="true" />
-                <element signature="e#1450#1451#0" expanded="true" />
-                <element signature="e#1482#1483#0" expanded="true" />
+                <element signature="e#1382#1383#0" expanded="true" />
+                <element signature="e#1409#1410#0" expanded="true" />
+                <element signature="e#1451#1452#0" expanded="true" />
+                <element signature="e#1483#1484#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -832,7 +831,7 @@
       <workItem from="1499183183686" duration="1641000" />
       <workItem from="1499200234436" duration="683000" />
       <workItem from="1499271599218" duration="5710000" />
-      <workItem from="1499363565967" duration="2220000" />
+      <workItem from="1499363565967" duration="2495000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1498906815541</created>
@@ -1002,11 +1001,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499365124150</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Added getHeight().">
+      <created>1499365819049</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1499365819049</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41492000" />
+    <option name="totallyTimeSpent" value="41767000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1072,7 +1078,8 @@
     <MESSAGE value="Added TreeOperations." />
     <MESSAGE value="Implemented findMax and findMin." />
     <MESSAGE value="Fixed findMin and findMax." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed findMin and findMax." />
+    <MESSAGE value="Added getHeight()." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added getHeight()." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1499,16 +1506,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/TreeOperations.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="32" column="78" lean-forward="false" selection-start-line="32" selection-start-column="78" selection-end-line="32" selection-end-column="78" />
+        <state relative-caret-position="39">
+          <caret line="27" column="21" lean-forward="false" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#231#232#0" expanded="true" />
             <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#1381#1382#0" expanded="true" />
-            <element signature="e#1408#1409#0" expanded="true" />
-            <element signature="e#1450#1451#0" expanded="true" />
-            <element signature="e#1482#1483#0" expanded="true" />
+            <element signature="e#1382#1383#0" expanded="true" />
+            <element signature="e#1409#1410#0" expanded="true" />
+            <element signature="e#1451#1452#0" expanded="true" />
+            <element signature="e#1483#1484#0" expanded="true" />
           </folding>
         </state>
       </provider>
