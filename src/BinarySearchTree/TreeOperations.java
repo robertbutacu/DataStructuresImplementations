@@ -19,8 +19,19 @@ public class TreeOperations {
 
     }
 
-    public int getHeight(TreeNode treeNode){
-        return 0;
+    public Integer getHeight(){
+
+        return getHeight(root);
+    }
+    private Integer getHeight(TreeNode treeNode){
+        if(treeNode == null)
+            return 0;
+
+        int leftHeight = getHeight(treeNode.getLeft());
+        int rightHeight = getHeight(treeNode.getRight());
+
+        return ((leftHeight > rightHeight) ? leftHeight + 1 : rightHeight + 1);
+
     }
 
     public Optional<String> findMax(){
