@@ -86,9 +86,10 @@ public class TreeManager {
             System.out.println("searching data left");
             delete(current.getLeft(), data);
 
-        }else
+        }
+        else
             if(data > current.getData()){
-                System.out.println("searching data right");
+                System.out.println("searching data right" + data);
                 delete(current.getRight(), data);
             }
             else{
@@ -104,7 +105,7 @@ public class TreeManager {
                     current = current.getRight();
                 }
                 else{
-                    TreeNode replacementNode = this.getMinDataNode(this.root.getRight());
+                    TreeNode replacementNode = this.getMinDataNode(current.getRight());
 
                     System.out.println("min  :" + replacementNode.getData());
 

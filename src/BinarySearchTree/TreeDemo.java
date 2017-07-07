@@ -56,7 +56,7 @@ public class TreeDemo {
         treeOperations.postOrderSearch(treeOperations.getRoot());
 
         //treeManager.delete(treeManager.getRoot(),3);
-        treeManager.delete(treeManager.getRoot(),1);
+        treeManager.delete(treeManager.getRoot(),0);
 
         treeOperations.setRoot(treeManager.getRoot());
 
