@@ -36,4 +36,8 @@ public class TreeNode {
     public void setLeft(TreeNode left) {
         this.left = left;
     }
+
+    public void setData(int newData){
+        this.data = newData;
+    }
 }

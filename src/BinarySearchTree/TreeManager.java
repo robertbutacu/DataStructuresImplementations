@@ -76,5 +76,56 @@ public class TreeManager {
 
     }
 
+    public TreeNode delete(TreeNode current, int data){
+        if(current == null){
+            System.out.println("base case");
+            return current;
+        }
+
+        if(data < current.getData()){
+            System.out.println("searching data left");
+            delete(current.getLeft(), data);
+
+        }else
+            if(data > current.getData()){
+                System.out.println("searching data right");
+                delete(current.getRight(), data);
+            }
+            else{
+                if(current.getLeft() == null && current.getRight() == null){
+                    System.out.println("leaf");
+                    current = null;
+                }
+                else if(current.getRight() == null){
+                    current = current.getLeft();
+
+                }
+                else if(current.getLeft() == null){
+                    current = current.getRight();
+                }
+                else{
+                    TreeNode replacementNode = this.getMinDataNode(this.root.getRight());
+
+                    System.out.println("min  :" + replacementNode.getData());
+
+                    current.setData(replacementNode.getData());
+
+                    current.setRight(delete(current.getRight(), replacementNode.getData()));
+
+                    System.out.println("current " + current.getData());
+                }
+
+            }
+
+            return current;
+
+    }
+
+    private TreeNode getMinDataNode(TreeNode current){
+        if(current.getLeft() == null)
+            return current;
+         return getMinDataNode(current.getLeft());
+    }
+
 
 }
