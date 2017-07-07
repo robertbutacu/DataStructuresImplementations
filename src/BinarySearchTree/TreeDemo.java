@@ -32,5 +32,7 @@ public class TreeDemo {
         System.out.println("Min : " + treeOperations.findMin().orElse("Empty tree"));
 
         System.out.println("Height : " + treeOperations.getHeight());
+
+        treeOperations.breadthFirstSearch();
     }
 }

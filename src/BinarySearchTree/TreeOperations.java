@@ -1,5 +1,6 @@
 package BinarySearchTree;
 
+import Queue.QueueArrayImpl;
 import sun.reflect.generics.tree.Tree;
 
 import java.util.Optional;
@@ -46,6 +47,41 @@ public class TreeOperations {
         }
 
         return Optional.of(Integer.toString(currentNode.getData()));
+
+    }
+
+    public void breadthFirstSearch(){
+        QueueArrayImpl<TreeNode> queueArray = new QueueArrayImpl<>(100);
+        queueArray.enqueue(root);
+        BST(queueArray);
+
+    }
+
+    private void BST(QueueArrayImpl<TreeNode> queueArray){
+        if(queueArray.isEmpty())
+            return;
+        TreeNode current = queueArray.dequeue().get();
+
+        System.out.println("Current element : " + current.getData());
+
+        if(current.getLeft() != null)
+            queueArray.enqueue(current.getLeft());
+
+        if(current.getRight() != null)
+            queueArray.enqueue(current.getRight());
+
+        BST(queueArray);
+    }
+
+    public void InorderSearch(){
+
+    }
+
+    public void PreorderSearch(){
+
+    }
+
+    public void PostOrderSearch(){
 
     }
 
