@@ -74,16 +74,33 @@ public class TreeOperations {
         BFS(queueArray);
     }
 
-    public void InorderSearch(){
+    public void inorderSearch(TreeNode root){
+        if(root == null)
+            return;
+
+        inorderSearch(root.getLeft());
+        System.out.println("Current value : " + root.getData());
+        inorderSearch(root.getRight());
 
     }
 
-    public void PreorderSearch(){
+    public void preorderSearch(TreeNode root){
+        if(root == null)
+            return;
 
+        System.out.println("Current value : " + root.getData());
+        preorderSearch(root.getLeft());
+        preorderSearch(root.getRight());
     }
 
-    public void PostOrderSearch(){
+    public void postOrderSearch(TreeNode root){
 
+        if(root == null)
+            return;
+
+        postOrderSearch(root.getLeft());
+        postOrderSearch(root.getRight());
+        System.out.println("Current value : " + root.getData());
     }
 
     public Optional<String> findMin(){
