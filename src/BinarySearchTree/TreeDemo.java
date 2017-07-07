@@ -55,8 +55,10 @@ public class TreeDemo {
         System.out.println("Postorder search: ");
         treeOperations.postOrderSearch(treeOperations.getRoot());
 
-        //treeManager.delete(treeManager.getRoot(),3);
+        treeManager.delete(treeManager.getRoot(),3);
         treeManager.delete(treeManager.getRoot(),0);
+
+        treeManager.delete(treeManager.getRoot(),5);
 
         treeOperations.setRoot(treeManager.getRoot());
 

@@ -83,18 +83,15 @@ public class TreeManager {
         }
 
         if(data < current.getData()){
-            System.out.println("searching data left");
-            delete(current.getLeft(), data);
+            current.setLeft(delete(current.getLeft(), data));
 
         }
         else
             if(data > current.getData()){
-                System.out.println("searching data right" + data);
-                delete(current.getRight(), data);
+                current.setRight(delete(current.getRight(), data));
             }
             else{
                 if(current.getLeft() == null && current.getRight() == null){
-                    System.out.println("leaf");
                     current = null;
                 }
                 else if(current.getRight() == null){
@@ -107,13 +104,10 @@ public class TreeManager {
                 else{
                     TreeNode replacementNode = this.getMinDataNode(current.getRight());
 
-                    System.out.println("min  :" + replacementNode.getData());
-
                     current.setData(replacementNode.getData());
 
                     current.setRight(delete(current.getRight(), replacementNode.getData()));
 
-                    System.out.println("current " + current.getData());
                 }
 
             }
