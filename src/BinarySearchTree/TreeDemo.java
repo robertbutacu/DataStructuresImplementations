@@ -34,5 +34,7 @@ public class TreeDemo {
         System.out.println("Height : " + treeOperations.getHeight());
 
         treeOperations.breadthFirstSearch();
+
+        System.out.println(treeOperations.isBinarySearchTree());
     }
 }

@@ -53,11 +53,12 @@ public class TreeOperations {
     public void breadthFirstSearch(){
         QueueArrayImpl<TreeNode> queueArray = new QueueArrayImpl<>(100);
         queueArray.enqueue(root);
-        BST(queueArray);
+        BFS(queueArray);
 
     }
 
-    private void BST(QueueArrayImpl<TreeNode> queueArray){
+    private void BFS(QueueArrayImpl<TreeNode> queueArray){
+        //finished parsing BST
         if(queueArray.isEmpty())
             return;
         TreeNode current = queueArray.dequeue().get();
@@ -70,7 +71,7 @@ public class TreeOperations {
         if(current.getRight() != null)
             queueArray.enqueue(current.getRight());
 
-        BST(queueArray);
+        BFS(queueArray);
     }
 
     public void InorderSearch(){
@@ -96,6 +97,22 @@ public class TreeOperations {
             currentNode = currentNode.getLeft();
 
         return Optional.of(Integer.toString(currentNode.getData()));
+    }
+
+    public boolean isBinarySearchTree(){
+        return isBST(root);
+    }
+
+    private boolean isBST(TreeNode current){
+        if(current == null)
+            return true;
+
+        //in order to be a BST, any element from the left sub-tree must be lower or equal than the current node's data
+        //and any element from the right sub-tree must be greater
+        return (current.getData() >= Integer.parseInt(new TreeOperations(current.getLeft()).findMax().orElse(String.valueOf(Integer.MIN_VALUE)))
+                && current.getData() < Integer.parseInt(new TreeOperations(current.getRight()).findMin().orElse(String.valueOf(Integer.MAX_VALUE)))
+                && isBST(current.getLeft())
+                && isBST(current.getRight()));
     }
 
     public TreeNode getRoot() {
