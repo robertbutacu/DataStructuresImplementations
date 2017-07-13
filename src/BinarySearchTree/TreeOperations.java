@@ -1,11 +1,7 @@
 package BinarySearchTree;
 
 import Queue.QueueArrayImpl;
-import sun.reflect.generics.tree.Tree;
-
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 import java.util.Optional;
 
 /**

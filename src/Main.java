@@ -21,8 +21,7 @@ public class  Main {
         queueDemo.startDemo();
         */
 
-        TreeDemo treeDemo = new TreeDemo();
+        new TreeDemo().getDemo();
 
-        treeDemo.getDemo();
     }
 }
