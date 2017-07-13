@@ -3,6 +3,9 @@ package BinarySearchTree;
 import Queue.QueueArrayImpl;
 import sun.reflect.generics.tree.Tree;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Optional;
 
 /**
@@ -130,6 +133,17 @@ public class TreeOperations {
                 && current.getData() < Integer.parseInt(new TreeOperations(current.getRight()).findMin().orElse(String.valueOf(Integer.MAX_VALUE)))
                 && isBST(current.getLeft())
                 && isBST(current.getRight()));
+    }
+
+    public boolean isBalanced(TreeNode root){
+        if(root == null)
+            return true;
+
+        if(!Arrays.asList(-1,0,1).contains(new TreeOperations(root.getLeft()).getHeight() -
+                                                new TreeOperations(root.getRight()).getHeight()))
+                return false;
+        return isBalanced(root.getRight()) && isBalanced(root.getLeft());
+
     }
 
     public TreeNode getRoot() {

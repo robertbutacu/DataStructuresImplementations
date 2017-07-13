@@ -30,6 +30,7 @@ public class TreeManager {
         return this.root == null;
     }
 
+
     public TreeNode insert(TreeNode treeNode, TreeNode newNode){
         if(isEmpty()){
             this.root = newNode;
