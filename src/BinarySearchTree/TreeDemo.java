@@ -54,16 +54,38 @@ public class TreeDemo {
 
         System.out.println("Postorder search: ");
         treeOperations.postOrderSearch(treeOperations.getRoot());
-/*
+
 
         treeManager.delete(treeManager.getRoot(),3);
         treeManager.delete(treeManager.getRoot(),0);
 
         treeManager.delete(treeManager.getRoot(),5);
-*/
+
 
         treeOperations.breadthFirstSearch();
 
         System.out.println(treeOperations.isBalanced(treeOperations.getRoot()));
+
+        System.out.println("Before : ");
+        treeManager.setRoot(new TreeNode(1));
+        treeManager.insert(treeManager.getRoot(), new TreeNode(2));
+        treeManager.insert(treeManager.getRoot(), new TreeNode(3));
+        treeManager.insert(treeManager.getRoot(), new TreeNode(4));
+        treeManager.insert(treeManager.getRoot(), new TreeNode(5));
+        treeManager.insert(treeManager.getRoot(), new TreeNode(6));
+
+
+
+        treeOperations.setRoot(treeManager.getRoot());
+        treeOperations.breadthFirstSearch();
+        System.out.println(treeOperations.isBalanced(treeOperations.getRoot()));
+
+        System.out.println("After :");
+        TreeNode root = new TreeTransformer().transformToAVL(treeManager.getRoot());
+        treeOperations.setRoot(root);
+
+        treeOperations.breadthFirstSearch();
+        System.out.println(treeOperations.isBalanced(treeOperations.getRoot()));
+        System.out.println("Height :" + treeOperations.getHeight());
     }
 }

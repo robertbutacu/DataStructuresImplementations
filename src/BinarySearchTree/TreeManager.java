@@ -25,6 +25,8 @@ public class TreeManager {
         return root;
     }
 
+    public void setRoot(TreeNode newRoot){this.root = newRoot;}
+
 
     public boolean isEmpty(){
         return this.root == null;
