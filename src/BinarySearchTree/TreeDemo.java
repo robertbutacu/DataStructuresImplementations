@@ -81,7 +81,7 @@ public class TreeDemo {
         System.out.println(treeOperations.isBalanced(treeOperations.getRoot()));
 
         System.out.println("After :");
-        TreeNode root = new TreeTransformer().transformToAVL(treeManager.getRoot());
+        TreeNode root = new BalanceBinaryTree().transformToAVL(treeManager.getRoot());
         treeOperations.setRoot(root);
 
         treeOperations.breadthFirstSearch();
