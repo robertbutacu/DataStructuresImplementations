@@ -41,28 +41,31 @@ public class UserDemo {
         System.out.println("2 + 5 :" + userManager.connectUsers(david,jordan));
         System.out.println("2 + 1 :" + userManager.connectUsers(david,robert));
 
-        //new UserPrinter(userManager).printInfoAboutNetwork();
+        new UserPrinter(userManager).printInfoAboutNetwork();
 
         trevor.printFriends();
-        /*System.out.println("Removing connection between first and second user : " + userManager.removeConnection(robert,david));
-        System.out.println("1 - 3:" + userManager.removeConnection(robert,ariana));
+        System.out.println("1 - 2: ");
+        System.out.println( robert.isFriend(robert.getFriendsList().getRoot(), david.getUser().getData()));
+        System.out.println("1 - 3: " + userManager.removeConnection(robert,ariana));
 
 
         System.out.println("Should return false:");
         System.out.println("1 - 2:");
         System.out.println(userManager.removeConnection(robert,david));
+        System.out.println("2 - 3:");
+        System.out.println(userManager.removeConnection(david,ariana));
         System.out.println("2 - 5:" );
         System.out.println(userManager.removeConnection(david,jordan));
 
-        System.out.println("\n\nUsers list:");*/
-        //userManager.printUsersList();
+        System.out.println("\n\nUsers list:");
+        userManager.printUsersList();
 
-       /* System.out.println("\n\nIs first user friend with second user? (false)");
-        System.out.println(robert.isFriend(robert.getUser(), david.getUser().getData()));
+        System.out.println("\n\nIs first user friend with second user? (false)");
+        System.out.println(robert.isFriend(robert.getFriendsList().getRoot(), david.getUser().getData()));
 
         System.out.println("\n\n\n");
 
-        new UserPrinter(userManager).printInfoAboutNetwork();*/
+        //new UserPrinter(userManager).printInfoAboutNetwork();
 
     }
 }

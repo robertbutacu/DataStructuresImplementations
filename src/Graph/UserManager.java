@@ -23,34 +23,17 @@ public class UserManager {
         this.addUser(firstUser);
         this.addUser(secondUser);
 
-        boolean isFirstUserConnected = firstUser.addFriend(secondUser);
-        boolean isSecondUserConnected = secondUser.addFriend(firstUser);
+        if(firstUser.isFriend(firstUser.getFriendsList().getRoot(), secondUser.getUser().getData()))
+            return false;
 
-        //in case first user added second user and second user hasn't
-        if(isFirstUserConnected && !isSecondUserConnected)
-            firstUser.removeFriend(secondUser);
-
-        //opposite of the above case
-        if(isFirstUserConnected && !isSecondUserConnected)
-            secondUser.removeFriend(firstUser);
-
-        return isFirstUserConnected && isSecondUserConnected;
+        return firstUser.addFriend(secondUser) && secondUser.addFriend(firstUser);
     }
 
     public boolean removeConnection(User firstUser, User secondUser){
-        boolean hasFirstUserRemoved = firstUser.removeFriend(secondUser);
-        boolean hasSecondUserRemoved = secondUser.removeFriend(firstUser);
+        if(!firstUser.isFriend(firstUser.getFriendsList().getRoot(), secondUser.getUser().getData()))
+            return false;
 
-        //in case first user removed and second user hasn't
-        if(hasFirstUserRemoved && !hasSecondUserRemoved)
-            firstUser.addFriend(secondUser);
-
-
-        //opposite case from above
-        if(!hasFirstUserRemoved && hasSecondUserRemoved)
-            secondUser.addFriend(firstUser);
-
-        return hasFirstUserRemoved && hasSecondUserRemoved;
+        return firstUser.removeFriend(secondUser) && secondUser.removeFriend(firstUser);
     }
 
     public boolean addUser(User user){
