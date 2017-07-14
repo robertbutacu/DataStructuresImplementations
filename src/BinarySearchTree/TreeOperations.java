@@ -52,7 +52,8 @@ public class TreeOperations {
 
     public void breadthFirstSearch(){
         QueueArrayImpl<TreeNode> queueArray = new QueueArrayImpl<>(10);
-        queueArray.enqueue(root);
+        if(this.root != null)
+            queueArray.enqueue(root);
         BFS(queueArray);
 
     }

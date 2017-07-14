@@ -25,7 +25,7 @@ public class UserPrinter {
 
         new TreeOperations(u.getFriendsList().getRoot()).breadthFirstSearch();
 
-        System.out.println("\n\n\n");
+        System.out.println("\n\n");
     }
 
 

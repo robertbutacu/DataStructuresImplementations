@@ -72,6 +72,7 @@ public class User {
 
         }
 
+        System.out.println("Inserting " + newFriend.getUser().getUsername() + " " + this.getUser().getUsername());
         this.friendsList.insert(this.friendsList.getRoot(), newFriend.getUser());
         //this.friendsList.setRoot(new BalanceBinaryTree().transformToAVL(this.friendsList.getRoot()));
 
@@ -112,6 +113,8 @@ public class User {
     }
 
     public void printFriends(){
+        if(this.friendsList.getRoot() == null)
+            System.out.println(this.getUser().getUsername() + " has no friends.");
         TreeOperations t = new TreeOperations(this.friendsList.getRoot());
         t.breadthFirstSearch();
     }
