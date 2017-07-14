@@ -1,22 +1,27 @@
 package Graph;
 
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created by Robert-PC on 7/14/2017.
  */
 public class UserManager {
-    private ArrayList<User> usersList;
+    private Set<User> usersList;
 
-    public UserManager(ArrayList<User> usersList){
+    public UserManager(Set<User> usersList){
         this.usersList = usersList;
     }
 
     public UserManager(){
-        this.usersList = new ArrayList<>();
+        this.usersList = new HashSet<>();
     }
 
     public boolean connectUsers(User firstUser, User secondUser){
+        this.addUser(firstUser);
+        this.addUser(secondUser);
+
         boolean isFirstUserConnected = firstUser.addFriend(secondUser);
         boolean isSecondUserConnected = secondUser.addFriend(firstUser);
 
@@ -47,11 +52,16 @@ public class UserManager {
         return hasFirstUserRemoved && hasSecondUserRemoved;
     }
 
-    public ArrayList<User> getUsersList() {
+    public boolean addUser(User user){
+        return user == null && this.usersList.add(user);
+    }
+
+
+    public Set<User> getUsersList() {
         return usersList;
     }
 
-    public void setUsersList(ArrayList<User> usersList) {
+    public void setUsersList(Set<User> usersList) {
         this.usersList = usersList;
     }
 }
