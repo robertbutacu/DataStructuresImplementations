@@ -3,6 +3,7 @@ package Graph;
 import BinarySearchTree.BalanceBinaryTree;
 import BinarySearchTree.TreeManager;
 import BinarySearchTree.TreeNode;
+import BinarySearchTree.TreeOperations;
 
 import java.util.Optional;
 
@@ -33,6 +34,7 @@ public class User {
 
     public User(TreeNode user){
         this.user = user;
+        this.friendsList = new TreeManager();
     }
 
 
@@ -60,7 +62,8 @@ public class User {
         if(newFriend.getUser() == this.user)
             return false;
 
-        this.friendsList.setRoot(new BalanceBinaryTree().transformToAVL(this.friendsList.insert(this.user, newFriend.getUser())));
+        this.friendsList.insert(this.user, newFriend.getUser());
+        this.friendsList.setRoot(new BalanceBinaryTree().transformToAVL(this.friendsList.getRoot()));
 
         return true;
     }
@@ -87,6 +90,10 @@ public class User {
 
     public TreeManager getFriendsList() {
         return friendsList;
+    }
+
+    public void printFriends(){
+        new TreeOperations(this.friendsList.getRoot()).breadthFirstSearch();
     }
 
 }

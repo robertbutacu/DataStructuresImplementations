@@ -64,4 +64,8 @@ public class UserManager {
     public void setUsersList(Set<User> usersList) {
         this.usersList = usersList;
     }
+
+    public void printFriendsOfUser(User user){
+        user.printFriends();
+    }
 }

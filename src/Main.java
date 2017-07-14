@@ -2,6 +2,7 @@ import BinarySearchTree.TreeDemo;
 import BinarySearchTree.TreeManager;
 import BinarySearchTree.TreeNode;
 import DoubleLinkedList.DoubleLinkedListDemo;
+import Graph.UserDemo;
 import Queue.QueueDemo;
 import Stack.StackDemo;
 
@@ -26,6 +27,7 @@ public class  Main {
 
         /*new TreeDemo().getDemo();*/
 
+        new UserDemo().getDemo();
 
     }
 }
