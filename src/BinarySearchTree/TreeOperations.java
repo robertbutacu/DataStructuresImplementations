@@ -23,6 +23,7 @@ public class TreeOperations {
 
         return getHeight(root);
     }
+
     private Integer getHeight(TreeNode treeNode){
         if(treeNode == null)
             return -1;

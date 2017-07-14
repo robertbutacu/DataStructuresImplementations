@@ -71,7 +71,6 @@ public class TreeManager {
 
         }
 
-        System.out.println("Current search for " + data + " : " + treeNode.getData() );
         if(treeNode.getData() > data)
             return searchData(treeNode.getLeft(), data);
         else
