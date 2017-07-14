@@ -119,9 +119,12 @@ public class TreeManager {
     }
 
     private TreeNode getMinDataNode(TreeNode current){
+        if(current == null)
+            return null;
+
         if(current.getLeft() == null)
             return current;
-         return getMinDataNode(current.getLeft());
+        return getMinDataNode(current.getLeft());
     }
 
 

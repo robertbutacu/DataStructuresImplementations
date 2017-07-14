@@ -39,8 +39,10 @@ public class User {
 
 
     public boolean isFriend(TreeNode user, int data){
-        if(user == null)
+        if(user == null){
+            //System.out.println("Is friend : Null user.");
             return false;
+        }
 
         if(user.getData() == data)
             return true;
@@ -53,32 +55,49 @@ public class User {
     }
 
     public boolean addFriend(User newFriend){
-        if(newFriend == null)
+        if(newFriend == null){
+            //System.out.println("Adding : Null new friend.");
             return false;
 
-        if(this.isFriend(this.getUser(), newFriend.getUser().getData()))
+        }
+
+        if(this.isFriend(this.friendsList.getRoot(), newFriend.getUser().getData())){
+            //System.out.println("Adding : Already friends.");
             return false;
 
-        if(newFriend.getUser() == this.user)
+        }
+        if(newFriend.getUser() == this.user){
+            //System.out.println("Adding : Can't befriend yourself.");
             return false;
 
-        this.friendsList.insert(this.user, newFriend.getUser());
-        this.friendsList.setRoot(new BalanceBinaryTree().transformToAVL(this.friendsList.getRoot()));
+        }
+
+        this.friendsList.insert(this.friendsList.getRoot(), newFriend.getUser());
+        //this.friendsList.setRoot(new BalanceBinaryTree().transformToAVL(this.friendsList.getRoot()));
 
         return true;
     }
 
     public boolean removeFriend(User removedFriend){
-        if(removedFriend == null)
+        if(removedFriend == null){
+            //System.out.println("Removing : null friend");
             return false;
 
-        if(this == removedFriend)
+        }
+
+        if(this == removedFriend){
+            //System.out.println("Removing : can't remove yourself");
             return false;
 
-        if(this.isFriend(this.getUser(), removedFriend.getUser().getData()))
+        }
+
+        if(!this.isFriend(this.getFriendsList().getRoot(), removedFriend.getUser().getData())){
+            //System.out.println("Removing : they are not friends.");
             return false;
 
-        this.getFriendsList().delete(this.getUser(), removedFriend.getUser().getData());
+        }
+
+        this.getFriendsList().delete(this.getFriendsList().getRoot(), removedFriend.getUser().getData());
 
         return true;
     }
@@ -93,7 +112,8 @@ public class User {
     }
 
     public void printFriends(){
-        new TreeOperations(this.friendsList.getRoot()).breadthFirstSearch();
+        TreeOperations t = new TreeOperations(this.friendsList.getRoot());
+        t.breadthFirstSearch();
     }
 
 }

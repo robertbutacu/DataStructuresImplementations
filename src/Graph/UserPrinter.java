@@ -13,6 +13,7 @@ public class UserPrinter {
     }
 
     public void printInfoAboutNetwork(){
+        System.out.println("Starting to print info.");
         for(User u : userManager.getUsersList()){
             printInfoAboutUser(u);
         }

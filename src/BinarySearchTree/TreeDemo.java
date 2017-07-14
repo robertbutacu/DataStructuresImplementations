@@ -13,12 +13,12 @@ public class TreeDemo {
 
         TreeManager treeManager = new TreeManager();
 
-        treeManager.insert(treeManager.getRoot(),new TreeNode(3));
-        treeManager.insert(treeManager.getRoot(),new TreeNode(1));
-        treeManager.insert(treeManager.getRoot(),new TreeNode(2));
-        treeManager.insert(treeManager.getRoot(),new TreeNode(4));
-        treeManager.insert(treeManager.getRoot(),new TreeNode(5));
-        treeManager.insert(treeManager.getRoot(),new TreeNode(0));
+        treeManager.insert(treeManager.getRoot(),new TreeNode(3,"A"));
+        treeManager.insert(treeManager.getRoot(),new TreeNode(1,"B"));
+        treeManager.insert(treeManager.getRoot(),new TreeNode(2,"C"));
+        treeManager.insert(treeManager.getRoot(),new TreeNode(4,"D"));
+        treeManager.insert(treeManager.getRoot(),new TreeNode(5,"E"));
+        treeManager.insert(treeManager.getRoot(),new TreeNode(0,"F"));
 
         System.out.println("Searching for 1: " + treeManager.search(1));
 
@@ -67,25 +67,25 @@ public class TreeDemo {
         System.out.println(treeOperations.isBalanced(treeOperations.getRoot()));
 
         System.out.println("Before : ");
-        treeManager.setRoot(new TreeNode(1));
-        treeManager.insert(treeManager.getRoot(), new TreeNode(2));
-        treeManager.insert(treeManager.getRoot(), new TreeNode(3));
-        treeManager.insert(treeManager.getRoot(), new TreeNode(4));
-        treeManager.insert(treeManager.getRoot(), new TreeNode(5));
-        treeManager.insert(treeManager.getRoot(), new TreeNode(6));
+        treeManager.setRoot(new TreeNode(1,"F"));
+        treeManager.insert(treeManager.getRoot(), new TreeNode(2,"A"));
+        treeManager.insert(treeManager.getRoot(), new TreeNode(3,"B"));
+        treeManager.insert(treeManager.getRoot(), new TreeNode(4,"C"));
+        treeManager.insert(treeManager.getRoot(), new TreeNode(5,"D"));
+        treeManager.insert(treeManager.getRoot(), new TreeNode(6,"E"));
 
 
 
         treeOperations.setRoot(treeManager.getRoot());
         treeOperations.breadthFirstSearch();
-        System.out.println(treeOperations.isBalanced(treeOperations.getRoot()));
+        System.out.println("Is balanced? " + treeOperations.isBalanced(treeOperations.getRoot()));
 
         System.out.println("After :");
         TreeNode root = new BalanceBinaryTree().transformToAVL(treeManager.getRoot());
         treeOperations.setRoot(root);
 
         treeOperations.breadthFirstSearch();
-        System.out.println(treeOperations.isBalanced(treeOperations.getRoot()));
+        System.out.println("Is balanced? " + treeOperations.isBalanced(treeOperations.getRoot()));
         System.out.println("Height :" + treeOperations.getHeight());
     }
 }

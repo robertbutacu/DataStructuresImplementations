@@ -28,20 +28,34 @@ public class UserDemo {
 
         UserManager userManager = new UserManager();
 
-        userManager.connectUsers(firstUser,secondUser);
-        userManager.connectUsers(firstUser,thirdUser);
-        userManager.connectUsers(firstUser,fifthUser);
-        userManager.connectUsers(secondUser,fourthUser);
-        userManager.connectUsers(secondUser,fifthUser);
-        userManager.connectUsers(secondUser,firstUser);
+        /*
+            Robert : David,Jordan,Ariana.
+            David : Robert, Jordan, Trevor.
 
-        new UserPrinter(userManager).printInfoAboutNetwork();
+         */
 
-        userManager.removeConnection(firstUser,secondUser);
-        userManager.removeConnection(firstUser,thirdUser);
+        System.out.println("1 + 2 :" + userManager.connectUsers(firstUser,secondUser));
+        System.out.println("1 + 3 :" + userManager.connectUsers(firstUser,thirdUser));
+        System.out.println("1 + 4 :" + userManager.connectUsers(firstUser,fifthUser));
+        System.out.println("2 + 4 :" + userManager.connectUsers(secondUser,fourthUser));
+        System.out.println("2 + 5 :" + userManager.connectUsers(secondUser,fifthUser));
+        System.out.println("2 + 1 :" + userManager.connectUsers(secondUser,firstUser));
+
+        //new UserPrinter(userManager).printInfoAboutNetwork();
+
+        System.out.println("Removing connection between first and second user : " + userManager.removeConnection(firstUser,secondUser));
+        System.out.println("1 - 3:" + userManager.removeConnection(firstUser,thirdUser));
         System.out.println("Should return false:");
-        userManager.removeConnection(firstUser,secondUser);
-        userManager.removeConnection(secondUser,fifthUser);
+        System.out.println("1 - 2:");
+        System.out.println(userManager.removeConnection(firstUser,secondUser));
+        System.out.println("2 - 5:" );
+        System.out.println(userManager.removeConnection(secondUser,fifthUser));
+
+        System.out.println("\n\nUsers list:");
+        userManager.printUsersList();
+
+        System.out.println("\n\nIs first user friend with second user? (false)");
+        System.out.println(firstUser.isFriend(firstUser.getUser(), secondUser.getUser().getData()));
 
         System.out.println("\n\n\n");
 

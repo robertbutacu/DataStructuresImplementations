@@ -3,6 +3,7 @@ package Graph;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 /**
  * Created by Robert-PC on 7/14/2017.
@@ -53,7 +54,7 @@ public class UserManager {
     }
 
     public boolean addUser(User user){
-        return user == null && this.usersList.add(user);
+        return this.usersList.add(user);
     }
 
 
@@ -63,6 +64,12 @@ public class UserManager {
 
     public void setUsersList(Set<User> usersList) {
         this.usersList = usersList;
+    }
+
+    public void printUsersList(){
+        for(User u : usersList){
+            System.out.println("Username :" + u.getUser().getUsername());
+        }
     }
 
     public void printFriendsOfUser(User user){
