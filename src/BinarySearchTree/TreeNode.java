@@ -56,19 +56,19 @@ public class TreeNode {
         this.data = newData;
     }
 
-    public static AtomicInteger getIdGenerator() {
-        return ID_GENERATOR;
-    }
-
-    public static void setIdGenerator(AtomicInteger idGenerator) {
-        ID_GENERATOR = idGenerator;
-    }
-
     public String getUsername() {
         return username;
     }
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

@@ -63,7 +63,7 @@ public class TreeOperations {
             return;
         TreeNode current = queueArray.dequeue().get();
 
-        System.out.println("Current element : " + current.getData());
+        System.out.println("Current username : " + current.getUsername());
 
         if(current.getLeft() != null)
             queueArray.enqueue(current.getLeft());
@@ -79,7 +79,7 @@ public class TreeOperations {
             return;
 
         inorderSearch(root.getLeft());
-        System.out.println("Current value : " + root.getData());
+        System.out.println("Current data : " + root.getData());
         inorderSearch(root.getRight());
 
     }

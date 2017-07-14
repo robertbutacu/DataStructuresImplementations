@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="84f14702-2004-40df-87c6-b0c2efe87d91" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Graph/UserManager.java" afterPath="$PROJECT_DIR$/src/Graph/UserManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BinarySearchTree/TreeNode.java" afterPath="$PROJECT_DIR$/src/BinarySearchTree/TreeNode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BinarySearchTree/TreeOperations.java" afterPath="$PROJECT_DIR$/src/BinarySearchTree/TreeOperations.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Graph/UserPrinter.java" afterPath="$PROJECT_DIR$/src/Graph/UserPrinter.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,7 +24,7 @@
       <file leaf-file-name="TreeManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/TreeManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
+            <state relative-caret-position="255">
               <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -35,10 +37,24 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="TreeNode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/TreeNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="66" column="24" lean-forward="false" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="24" />
+              <folding>
+                <element signature="e#1236#1237#0" expanded="true" />
+                <element signature="e#1269#1270#0" expanded="true" />
+                <element signature="e#1297#1298#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Graph/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
+            <state relative-caret-position="1105">
               <caret line="65" column="19" lean-forward="false" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -51,7 +67,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserManager.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Graph/UserManager.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1037">
@@ -83,12 +99,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserPrinter.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserPrinter.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Graph/UserPrinter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-              <folding />
+            <state relative-caret-position="132">
+              <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+              <folding>
+                <element signature="e#215#216#0" expanded="true" />
+                <element signature="e#261#262#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,16 +140,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DoubleLinkedListDemo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DoubleLinkedList/DoubleLinkedListDemo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="BalanceBinaryTree.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/BalanceBinaryTree.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -144,19 +153,14 @@
       <file leaf-file-name="TreeOperations.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/TreeOperations.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="-51">
+              <caret line="52" column="36" lean-forward="true" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#TreeOperations#1;class#TreeOperations#0" expanded="false" />
                 <element signature="method#getHeight#0;class#TreeOperations#0" expanded="false" />
                 <element signature="method#getHeight#1;class#TreeOperations#0" expanded="false" />
                 <element signature="method#findMax#0;class#TreeOperations#0" expanded="false" />
-                <element signature="method#breadthFirstSearch#0;class#TreeOperations#0" expanded="false" />
-                <element signature="method#BFS#0;class#TreeOperations#0" expanded="false" />
-                <element signature="method#inorderSearch#0;class#TreeOperations#0" expanded="false" />
-                <element signature="method#preorderSearch#0;class#TreeOperations#0" expanded="false" />
-                <element signature="method#postOrderSearch#0;class#TreeOperations#0" expanded="false" />
                 <element signature="method#findMin#0;class#TreeOperations#0" expanded="false" />
                 <element signature="method#isBST#0;class#TreeOperations#0" expanded="false" />
                 <element signature="method#isBalanced#0;class#TreeOperations#0" expanded="false" />
@@ -208,12 +212,13 @@
         <option value="$PROJECT_DIR$/src/BinarySearchTree/TreeTransformer.java" />
         <option value="$PROJECT_DIR$/src/BinarySearchTree/TreeDemo.java" />
         <option value="$PROJECT_DIR$/src/BinarySearchTree/BalanceBinaryTree.java" />
-        <option value="$PROJECT_DIR$/src/BinarySearchTree/TreeNode.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/BinarySearchTree/TreeOperations.java" />
         <option value="$PROJECT_DIR$/src/BinarySearchTree/TreeManager.java" />
         <option value="$PROJECT_DIR$/src/Graph/User.java" />
         <option value="$PROJECT_DIR$/src/Graph/UserManager.java" />
+        <option value="$PROJECT_DIR$/src/BinarySearchTree/TreeNode.java" />
+        <option value="$PROJECT_DIR$/src/BinarySearchTree/TreeOperations.java" />
+        <option value="$PROJECT_DIR$/src/Graph/UserPrinter.java" />
       </list>
     </option>
   </component>
@@ -883,7 +888,7 @@
       <workItem from="1499933907920" duration="1762000" />
       <workItem from="1499946295683" duration="3951000" />
       <workItem from="1499965316112" duration="3868000" />
-      <workItem from="1500057206987" duration="4674000" />
+      <workItem from="1500057206987" duration="5048000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1498906815541</created>
@@ -1158,11 +1163,18 @@
       <option name="project" value="LOCAL" />
       <updated>1500061590047</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Refactored UserManager.friendsList to a Set.">
+      <created>1500061922442</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1500061922442</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63741000" />
+    <option name="totallyTimeSpent" value="64115000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1206,7 +1218,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added Queue files and ArrayDoubleLinkedListImpl." />
     <MESSAGE value="Queue using array implemented." />
     <MESSAGE value="BST files created and TreeNode(beta) implementation." />
     <MESSAGE value="BST Insert Method." />
@@ -1231,7 +1242,8 @@
     <MESSAGE value="Basic Description of Graph's User." />
     <MESSAGE value="Implemented some of User's functionality." />
     <MESSAGE value="Refactored some methods from User class and added other classes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored some methods from User class and added other classes." />
+    <MESSAGE value="Refactored UserManager.friendsList to a Set." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored UserManager.friendsList to a Set." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1555,25 +1567,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/TreeNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#656#657#0" expanded="false" />
-            <element signature="e#683#684#0" expanded="false" />
-            <element signature="e#717#718#0" expanded="false" />
-            <element signature="e#745#746#0" expanded="false" />
-            <element signature="e#778#779#0" expanded="false" />
-            <element signature="e#805#806#0" expanded="false" />
-            <element signature="e#849#850#0" expanded="false" />
-            <element signature="e#883#884#0" expanded="false" />
-            <element signature="e#925#926#0" expanded="false" />
-            <element signature="e#957#958#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
@@ -1622,69 +1615,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/TreeOperations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#TreeOperations#1;class#TreeOperations#0" expanded="false" />
-            <element signature="method#getHeight#0;class#TreeOperations#0" expanded="false" />
-            <element signature="method#getHeight#1;class#TreeOperations#0" expanded="false" />
-            <element signature="method#findMax#0;class#TreeOperations#0" expanded="false" />
-            <element signature="method#breadthFirstSearch#0;class#TreeOperations#0" expanded="false" />
-            <element signature="method#BFS#0;class#TreeOperations#0" expanded="false" />
-            <element signature="method#inorderSearch#0;class#TreeOperations#0" expanded="false" />
-            <element signature="method#preorderSearch#0;class#TreeOperations#0" expanded="false" />
-            <element signature="method#postOrderSearch#0;class#TreeOperations#0" expanded="false" />
-            <element signature="method#findMin#0;class#TreeOperations#0" expanded="false" />
-            <element signature="method#isBST#0;class#TreeOperations#0" expanded="false" />
-            <element signature="method#isBalanced#0;class#TreeOperations#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/TreeManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#insert#0;class#TreeManager#0" expanded="false" />
-            <element signature="method#searchData#0;class#TreeManager#0" expanded="false" />
-            <element signature="method#delete#0;class#TreeManager#0" expanded="false" />
-            <element signature="method#getMinDataNode#0;class#TreeManager#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Graph/UserPrinter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Graph/UserDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Graph/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="65" column="19" lean-forward="false" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
-            <element signature="e#411#412#0" expanded="true" />
-            <element signature="e#1673#1674#0" expanded="true" />
-            <element signature="e#1707#1708#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1704,6 +1639,74 @@
             <element signature="e#1796#1797#0" expanded="true" />
             <element signature="e#1849#1850#0" expanded="true" />
             <element signature="e#1891#1892#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/TreeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="66" column="24" lean-forward="false" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="24" />
+          <folding>
+            <element signature="e#1236#1237#0" expanded="true" />
+            <element signature="e#1269#1270#0" expanded="true" />
+            <element signature="e#1297#1298#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graph/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1105">
+          <caret line="65" column="19" lean-forward="false" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
+            <element signature="e#1673#1674#0" expanded="true" />
+            <element signature="e#1707#1708#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/TreeManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#insert#0;class#TreeManager#0" expanded="false" />
+            <element signature="method#searchData#0;class#TreeManager#0" expanded="false" />
+            <element signature="method#delete#0;class#TreeManager#0" expanded="false" />
+            <element signature="method#getMinDataNode#0;class#TreeManager#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/TreeOperations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="52" column="36" lean-forward="true" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#TreeOperations#1;class#TreeOperations#0" expanded="false" />
+            <element signature="method#getHeight#0;class#TreeOperations#0" expanded="false" />
+            <element signature="method#getHeight#1;class#TreeOperations#0" expanded="false" />
+            <element signature="method#findMax#0;class#TreeOperations#0" expanded="false" />
+            <element signature="method#findMin#0;class#TreeOperations#0" expanded="false" />
+            <element signature="method#isBST#0;class#TreeOperations#0" expanded="false" />
+            <element signature="method#isBalanced#0;class#TreeOperations#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graph/UserPrinter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+          <folding>
+            <element signature="e#215#216#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
           </folding>
         </state>
       </provider>
