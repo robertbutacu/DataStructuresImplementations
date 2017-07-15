@@ -66,11 +66,16 @@ public class TreeOperations {
 
         System.out.println("Current username : " + current.getUsername());
 
-        if(current.getLeft() != null)
+        if(current.getLeft() != null){
+            //System.out.println("Enqueue left: " + current.getLeft().getUsername());
             queueArray.enqueue(current.getLeft());
 
-        if(current.getRight() != null)
+        }
+
+        if(current.getRight() != null){
+            //System.out.println("Enqueue right: " + current.getRight().getUsername());
             queueArray.enqueue(current.getRight());
+        }
 
         BFS(queueArray);
     }

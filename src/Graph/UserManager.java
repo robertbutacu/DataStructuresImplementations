@@ -30,10 +30,12 @@ public class UserManager {
     }
 
     public boolean removeConnection(User firstUser, User secondUser){
-        if(!firstUser.isFriend(firstUser.getFriendsList().getRoot(), secondUser.getUser().getData()))
+        if(firstUser.isFriend(firstUser.getFriendsList().getRoot(), secondUser.getUser().getData()))
+            return firstUser.removeFriend(secondUser) && secondUser.removeFriend(firstUser);
+        else
             return false;
 
-        return firstUser.removeFriend(secondUser) && secondUser.removeFriend(firstUser);
+
     }
 
     public boolean addUser(User user){
@@ -50,6 +52,9 @@ public class UserManager {
     }
 
     public void printUsersList(){
+        if(usersList.isEmpty())
+            System.out.println("There are no people currently in the network.");
+
         for(User u : usersList){
             System.out.println("Username :" + u.getUser().getUsername());
         }

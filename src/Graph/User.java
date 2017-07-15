@@ -72,8 +72,16 @@ public class User {
 
         }
 
+        if(this.friendsList == null){
+            this.friendsList.setRoot(newFriend.getUser());
+        }
+
         //System.out.println("Inserting " + newFriend.getUser().getUsername() + " " + this.getUser().getUsername());
+
+
         this.friendsList.insert(this.friendsList.getRoot(), newFriend.getUser());
+        //System.out.println(this.user.getUsername());
+        //this.printFriends();
         //this.friendsList.setRoot(new BalanceBinaryTree().transformToAVL(this.friendsList.getRoot()));
 
         return true;
@@ -86,7 +94,7 @@ public class User {
 
         }
 
-        if(this == removedFriend){
+        if(this.equals(removedFriend)){
             //System.out.println("Removing : can't remove yourself");
             return false;
 

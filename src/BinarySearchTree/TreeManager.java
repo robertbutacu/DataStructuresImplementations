@@ -80,7 +80,6 @@ public class TreeManager {
 
     public TreeNode delete(TreeNode current, int data){
         if(current == null){
-            System.out.println("base case");
             return current;
         }
 

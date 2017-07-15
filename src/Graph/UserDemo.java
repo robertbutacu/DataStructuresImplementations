@@ -12,60 +12,20 @@ public class UserDemo {
     }
 
     public void getDemo(){
-        TreeNode first = new TreeNode(1,"Robert");
-        TreeNode second = new TreeNode(2,"David");
-        TreeNode third = new TreeNode(3, "Ariana");
-        TreeNode fourth = new TreeNode(4,"Kavinsky");
-        TreeNode fifth = new TreeNode(6,"Jordan");
-        TreeNode sixth = new TreeNode(5,"Trevor");
+        User a = new User(new TreeNode(1, "a"));
+        User b = new User(new TreeNode(2, "b"));
+        User c = new User(new TreeNode(3, "c"));
+        User d = new User(new TreeNode(4, "d"));
+        User e = new User(new TreeNode(5, "e"));
 
-        User robert = new User(first);
-        User david = new User(second);
-        User ariana = new User(third);
-        User kavinsky = new User(fourth);
-        User jordan = new User(fifth);
-        User trevor = new User(sixth);
+        UserManager manager = new UserManager();
 
-        UserManager userManager = new UserManager();
+        manager.connectUsers(a, b);
+        System.out.println(a.isFriend(a.getFriendsList().getRoot(), b.getUser().getData()));
 
-        /*
-            Robert : David,Jordan,Ariana.
-            David : Robert, Jordan, Trevor.
-
-         */
-
-        System.out.println("1 + 2 :" + userManager.connectUsers(robert,david));
-        System.out.println("1 + 3 :" + userManager.connectUsers(robert,ariana));
-        System.out.println("1 + 4 :" + userManager.connectUsers(robert,jordan));
-        System.out.println("2 + 4 :" + userManager.connectUsers(david,kavinsky));
-        System.out.println("2 + 5 :" + userManager.connectUsers(david,jordan));
-        System.out.println("2 + 1 :" + userManager.connectUsers(david,robert));
-
-        new UserPrinter(userManager).printInfoAboutNetwork();
-
-        trevor.printFriends();
-        System.out.println("1 - 2: ");
-        System.out.println( robert.isFriend(robert.getFriendsList().getRoot(), david.getUser().getData()));
-        System.out.println("1 - 3: " + userManager.removeConnection(robert,ariana));
-
-
-        System.out.println("Should return false:");
-        System.out.println("1 - 2:");
-        System.out.println(userManager.removeConnection(robert,david));
-        System.out.println("2 - 3:");
-        System.out.println(userManager.removeConnection(david,ariana));
-        System.out.println("2 - 5:" );
-        System.out.println(userManager.removeConnection(david,jordan));
-
-        System.out.println("\n\nUsers list:");
-        userManager.printUsersList();
-
-        System.out.println("\n\nIs first user friend with second user? (false)");
-        System.out.println(robert.isFriend(robert.getFriendsList().getRoot(), david.getUser().getData()));
-
-        System.out.println("\n\n\n");
-
-        //new UserPrinter(userManager).printInfoAboutNetwork();
-
+        System.out.println(manager.connectUsers(a,b));
+        System.out.println(manager.connectUsers(a,e));
+        System.out.println(manager.connectUsers(b,c));
+        new UserPrinter(manager).printInfoAboutNetwork();
     }
 }

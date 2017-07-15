@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="84f14702-2004-40df-87c6-b0c2efe87d91" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BinarySearchTree/TreeManager.java" afterPath="$PROJECT_DIR$/src/BinarySearchTree/TreeManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BinarySearchTree/TreeOperations.java" afterPath="$PROJECT_DIR$/src/BinarySearchTree/TreeOperations.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Graph/User.java" afterPath="$PROJECT_DIR$/src/Graph/User.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Graph/UserDemo.java" afterPath="$PROJECT_DIR$/src/Graph/UserDemo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Graph/UserManager.java" afterPath="$PROJECT_DIR$/src/Graph/UserManager.java" />
@@ -24,11 +26,10 @@
       <file leaf-file-name="TreeManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/TreeManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-191">
-              <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+            <state relative-caret-position="149">
+              <caret line="81" column="28" lean-forward="false" selection-start-line="81" selection-start-column="28" selection-end-line="81" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#insert#0;class#TreeManager#0" expanded="false" />
                 <element signature="method#searchData#0;class#TreeManager#0" expanded="false" />
               </folding>
             </state>
@@ -38,12 +39,10 @@
       <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Graph/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="54" column="5" lean-forward="true" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+            <state relative-caret-position="-276">
+              <caret line="96" column="36" lean-forward="false" selection-start-line="96" selection-start-column="36" selection-end-line="96" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3059#3060#0" expanded="true" />
-                <element signature="e#3093#3094#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -52,22 +51,12 @@
       <file leaf-file-name="UserManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Graph/UserManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+            <state relative-caret-position="306">
+              <caret line="35" column="25" lean-forward="false" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#269#270#0" expanded="true" />
-                <element signature="e#311#312#0" expanded="true" />
-                <element signature="e#338#339#0" expanded="true" />
-                <element signature="e#386#387#0" expanded="true" />
-                <element signature="e#1073#1074#0" expanded="true" />
-                <element signature="e#1120#1121#0" expanded="true" />
-                <element signature="e#1160#1161#0" expanded="true" />
-                <element signature="e#1192#1193#0" expanded="true" />
-                <element signature="e#1245#1246#0" expanded="true" />
-                <element signature="e#1287#1288#0" expanded="true" />
-                <element signature="e#1493#1494#0" expanded="true" />
-                <element signature="e#1528#1529#0" expanded="true" />
+                <element signature="e#1624#1625#0" expanded="true" />
+                <element signature="e#1659#1660#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,8 +65,8 @@
       <file leaf-file-name="UserDemo.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Graph/UserDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="63" column="106" lean-forward="false" selection-start-line="63" selection-start-column="106" selection-end-line="63" selection-end-column="106" />
+            <state relative-caret-position="121">
+              <caret line="20" column="48" lean-forward="true" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -96,12 +85,9 @@
       <file leaf-file-name="UserPrinter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Graph/UserPrinter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="27" column="32" lean-forward="true" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-              <folding>
-                <element signature="e#215#216#0" expanded="true" />
-                <element signature="e#261#262#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="357">
+              <caret line="23" column="45" lean-forward="true" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -109,8 +95,8 @@
       <file leaf-file-name="TreeOperations.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/TreeOperations.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="55" column="37" lean-forward="true" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
+            <state relative-caret-position="-109">
+              <caret line="66" column="34" lean-forward="true" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#TreeOperations#1;class#TreeOperations#0" expanded="false" />
@@ -142,7 +128,12 @@
       <find>Null user</find>
       <find>secondUser</find>
       <find>thirdUser</find>
+      <find>ariana</find>
+      <find>david</find>
       <find>Inserting</find>
+      <find>kavinsky</find>
+      <find>jordan</find>
+      <find>trevor</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -175,11 +166,11 @@
         <option value="$PROJECT_DIR$/src/BinarySearchTree/TreeNode.java" />
         <option value="$PROJECT_DIR$/src/BinarySearchTree/TreeDemo.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/BinarySearchTree/TreeManager.java" />
         <option value="$PROJECT_DIR$/src/Graph/UserPrinter.java" />
         <option value="$PROJECT_DIR$/src/BinarySearchTree/TreeOperations.java" />
-        <option value="$PROJECT_DIR$/src/Graph/User.java" />
         <option value="$PROJECT_DIR$/src/Graph/UserManager.java" />
+        <option value="$PROJECT_DIR$/src/BinarySearchTree/TreeManager.java" />
+        <option value="$PROJECT_DIR$/src/Graph/User.java" />
         <option value="$PROJECT_DIR$/src/Graph/UserDemo.java" />
       </list>
     </option>
@@ -246,8 +237,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -312,7 +301,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -832,7 +823,8 @@
       <workItem from="1499933907920" duration="1762000" />
       <workItem from="1499946295683" duration="3951000" />
       <workItem from="1499965316112" duration="3868000" />
-      <workItem from="1500057206987" duration="15838000" />
+      <workItem from="1500057206987" duration="16520000" />
+      <workItem from="1500104792538" duration="5262000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1498906815541</created>
@@ -1149,11 +1141,18 @@
       <option name="project" value="LOCAL" />
       <updated>1500071205359</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Stiching and fixing.">
+      <created>1500073729551</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1500073729551</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74905000" />
+    <option name="totallyTimeSpent" value="80849000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1162,14 +1161,14 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.44436312" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.44143486" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3895899" sideWeight="0.5885798" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3895899" sideWeight="0.59297216" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3895899" sideWeight="0.4114202" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3895899" sideWeight="0.4070278" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1197,7 +1196,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Case when root is null not covered." />
     <MESSAGE value="Added TreeOperations." />
     <MESSAGE value="Implemented findMax and findMin." />
     <MESSAGE value="Fixed findMin and findMax." />
@@ -1222,7 +1220,8 @@
     <MESSAGE value="Adjustments and demo creation. Bugs..." />
     <MESSAGE value="Im a retard. Still needs some working." />
     <MESSAGE value="Small fixes. Needs working." />
-    <option name="LAST_COMMIT_MESSAGE" value="Small fixes. Needs working." />
+    <MESSAGE value="Stiching and fixing." />
+    <option name="LAST_COMMIT_MESSAGE" value="Stiching and fixing." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1253,7 +1252,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="901">
           <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1268,10 +1266,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="43" lean-forward="false" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
-          <folding>
-            <element signature="e#376#377#0" expanded="false" />
-            <element signature="e#426#427#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1300,7 +1294,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
           <caret line="46" column="60" lean-forward="false" selection-start-line="46" selection-start-column="60" selection-end-line="46" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1315,7 +1308,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1344,10 +1336,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
           <caret line="41" column="41" lean-forward="false" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
-          <folding>
-            <element signature="e#376#377#0" expanded="false" />
-            <element signature="e#426#427#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1376,7 +1364,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1420,10 +1407,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="e#376#377#0" expanded="false" />
-            <element signature="e#426#427#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1489,7 +1472,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
           <caret line="50" column="59" lean-forward="false" selection-start-line="50" selection-start-column="59" selection-end-line="50" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1504,30 +1486,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#434#435#0" expanded="false" />
-            <element signature="e#459#460#0" expanded="false" />
-            <element signature="e#497#498#0" expanded="false" />
-            <element signature="e#530#531#0" expanded="false" />
-            <element signature="e#582#583#0" expanded="false" />
-            <element signature="e#626#627#0" expanded="false" />
-            <element signature="e#661#662#0" expanded="false" />
-            <element signature="e#695#696#0" expanded="false" />
-            <element signature="e#746#747#0" expanded="false" />
-            <element signature="e#792#793#0" expanded="false" />
-            <element signature="e#822#823#0" expanded="false" />
-            <element signature="e#851#852#0" expanded="false" />
-            <element signature="e#892#893#0" expanded="false" />
-            <element signature="e#928#929#0" expanded="false" />
-            <element signature="e#973#974#0" expanded="false" />
-            <element signature="e#1004#1005#0" expanded="false" />
-            <element signature="e#1062#1063#0" expanded="false" />
-            <element signature="e#1102#1103#0" expanded="false" />
-            <element signature="e#1143#1144#0" expanded="false" />
-            <element signature="e#1170#1171#0" expanded="false" />
-            <element signature="e#1220#1221#0" expanded="false" />
-            <element signature="e#1252#1253#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1535,7 +1493,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="918">
           <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1543,15 +1500,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding>
-            <element signature="method#DoubleLinkedListManager#0;class#DoubleLinkedListManager#0" expanded="false" />
-            <element signature="method#insertHouseAfterPosition#0;class#DoubleLinkedListManager#0" expanded="false" />
-            <element signature="method#add#0;class#DoubleLinkedListManager#0" expanded="false" />
-            <element signature="method#deleteHouseById#0;class#DoubleLinkedListManager#0" expanded="false" />
-            <element signature="method#replaceTail#0;class#DoubleLinkedListManager#0" expanded="false" />
-            <element signature="method#replaceHead#0;class#DoubleLinkedListManager#0" expanded="false" />
-            <element signature="method#replaceOnFoundPosition#0;class#DoubleLinkedListManager#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1579,15 +1527,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/TreeDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="80" column="45" lean-forward="false" selection-start-line="80" selection-start-column="45" selection-end-line="80" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1603,25 +1542,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Graph/UserPrinter.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="23" column="45" lean-forward="true" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/TreeDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="80" column="45" lean-forward="false" selection-start-line="80" selection-start-column="45" selection-end-line="80" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/TreeManager.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
-          <caret line="27" column="32" lean-forward="true" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+          <caret line="81" column="28" lean-forward="false" selection-start-line="81" selection-start-column="28" selection-end-line="81" selection-end-column="28" />
           <folding>
-            <element signature="e#215#216#0" expanded="true" />
-            <element signature="e#261#262#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#searchData#0;class#TreeManager#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/TreeOperations.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="55" column="37" lean-forward="true" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
+        <state relative-caret-position="-109">
+          <caret line="66" column="34" lean-forward="true" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#TreeOperations#1;class#TreeOperations#0" expanded="false" />
@@ -1635,56 +1589,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/TreeManager.java">
+    <entry file="file://$PROJECT_DIR$/src/Graph/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-191">
-          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+        <state relative-caret-position="-276">
+          <caret line="96" column="36" lean-forward="false" selection-start-line="96" selection-start-column="36" selection-end-line="96" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#insert#0;class#TreeManager#0" expanded="false" />
-            <element signature="method#searchData#0;class#TreeManager#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Graph/UserManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        <state relative-caret-position="306">
+          <caret line="35" column="25" lean-forward="false" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#269#270#0" expanded="true" />
-            <element signature="e#311#312#0" expanded="true" />
-            <element signature="e#338#339#0" expanded="true" />
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#1073#1074#0" expanded="true" />
-            <element signature="e#1120#1121#0" expanded="true" />
-            <element signature="e#1160#1161#0" expanded="true" />
-            <element signature="e#1192#1193#0" expanded="true" />
-            <element signature="e#1245#1246#0" expanded="true" />
-            <element signature="e#1287#1288#0" expanded="true" />
-            <element signature="e#1493#1494#0" expanded="true" />
-            <element signature="e#1528#1529#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Graph/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="54" column="5" lean-forward="true" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3059#3060#0" expanded="true" />
-            <element signature="e#3093#3094#0" expanded="true" />
+            <element signature="e#1624#1625#0" expanded="true" />
+            <element signature="e#1659#1660#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Graph/UserDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="63" column="106" lean-forward="false" selection-start-line="63" selection-start-column="106" selection-end-line="63" selection-end-column="106" />
+        <state relative-caret-position="121">
+          <caret line="20" column="48" lean-forward="true" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
           <folding />
         </state>
       </provider>
