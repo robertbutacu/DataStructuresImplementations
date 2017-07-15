@@ -5,7 +5,9 @@ import BinarySearchTree.TreeManager;
 import BinarySearchTree.TreeNode;
 import BinarySearchTree.TreeOperations;
 
+import java.util.HashSet;
 import java.util.Optional;
+import java.util.Set;
 
 /**
  * Created by Robert-PC on 7/13/2017.
@@ -30,84 +32,26 @@ public class User {
     TreeNode user;
 
     //binary tree representing the network of friends
-    TreeManager friendsList;
+    Set<TreeNode> friendsList;
 
     public User(TreeNode user){
         this.user = user;
-        this.friendsList = new TreeManager();
+        this.friendsList = new HashSet<>();
     }
 
 
-    public boolean isFriend(TreeNode user, int data){
-        if(user == null){
-            //System.out.println("Is friend : Null user.");
-            return false;
-        }
-
-        if(user.getData() == data)
-            return true;
-
-        if(user.getData() < data)
-            return isFriend(user.getRight(), data);
-        else
-            return isFriend(user.getLeft(), data);
+    public boolean isFriend(TreeNode user){
+        return friendsList.contains(user);
 
     }
 
     public boolean addFriend(User newFriend){
-        if(newFriend == null){
-            //System.out.println("Adding : Null new friend.");
-            return false;
+        return this.friendsList.add(newFriend.getUser());
 
-        }
-
-        if(this.isFriend(this.friendsList.getRoot(), newFriend.getUser().getData())){
-            //System.out.println("Adding : Already friends.");
-            return false;
-
-        }
-        if(newFriend.getUser() == this.user){
-            //System.out.println("Adding : Can't befriend yourself.");
-            return false;
-
-        }
-
-        if(this.friendsList == null){
-            this.friendsList.setRoot(newFriend.getUser());
-        }
-
-        //System.out.println("Inserting " + newFriend.getUser().getUsername() + " " + this.getUser().getUsername());
-
-        this.friendsList.insert(this.friendsList.getRoot(), newFriend.getUser());
-        //System.out.println(this.user.getUsername());
-        //this.printFriends();
-        //this.friendsList.setRoot(new BalanceBinaryTree().transformToAVL(this.friendsList.getRoot()));
-
-        return true;
     }
 
     public boolean removeFriend(User removedFriend){
-        if(removedFriend == null){
-            //System.out.println("Removing : null friend");
-            return false;
-
-        }
-
-        if(this.equals(removedFriend)){
-            //System.out.println("Removing : can't remove yourself");
-            return false;
-
-        }
-
-        if(!this.isFriend(this.getFriendsList().getRoot(), removedFriend.getUser().getData())){
-            System.out.println("Removing : they are not friends.");
-            return false;
-
-        }
-
-        this.getFriendsList().delete(this.getFriendsList().getRoot(), removedFriend.getUser().getData());
-
-        return true;
+        return this.friendsList.remove(removedFriend.getUser());
     }
 
 
@@ -115,15 +59,14 @@ public class User {
         return user;
     }
 
-    public TreeManager getFriendsList() {
+    public Set<TreeNode> getFriendsList() {
         return friendsList;
     }
 
     public void printFriends(){
-        if(this.friendsList.getRoot() == null)
-            System.out.println(this.getUser().getUsername() + " has no friends.");
-        TreeOperations t = new TreeOperations(this.friendsList.getRoot());
-        t.breadthFirstSearch();
+        for(TreeNode u : this.friendsList)
+            System.out.println("Current friend : " + u.getUsername());
+
     }
 
 }

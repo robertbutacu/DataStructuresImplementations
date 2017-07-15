@@ -1,5 +1,6 @@
 package Graph;
 
+import BinarySearchTree.TreeNode;
 import BinarySearchTree.TreeOperations;
 
 /**
@@ -23,7 +24,8 @@ public class UserPrinter {
         System.out.println("User id :" + u.getUser().getId() + " Username : " + u.getUser().getUsername());
         System.out.println("Friends list :");
 
-        new TreeOperations(u.getFriendsList().getRoot()).breadthFirstSearch();
+        for(TreeNode t : u.getFriendsList())
+            System.out.println("Current friend : " + t.getUsername());
 
         System.out.println("\n\n");
     }

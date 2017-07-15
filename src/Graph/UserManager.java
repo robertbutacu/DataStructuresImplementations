@@ -23,19 +23,13 @@ public class UserManager {
         this.addUser(firstUser);
         this.addUser(secondUser);
 
-        if(firstUser.isFriend(firstUser.getFriendsList().getRoot(), secondUser.getUser().getData()))
-            return false;
-
-        return firstUser.addFriend(secondUser) && secondUser.addFriend(firstUser);
+        return firstUser.getFriendsList().add(secondUser.getUser()) &&
+                secondUser.getFriendsList().add(firstUser.getUser());
     }
 
     public boolean removeConnection(User firstUser, User secondUser){
-        if(firstUser.isFriend(firstUser.getFriendsList().getRoot(), secondUser.getUser().getData()))
-            return firstUser.removeFriend(secondUser) && secondUser.removeFriend(firstUser);
-        else
-            return false;
-
-
+        return firstUser.getFriendsList().remove(secondUser.getUser()) &&
+                secondUser.getFriendsList().remove(firstUser.getUser());
     }
 
     public boolean addUser(User user){

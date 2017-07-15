@@ -20,12 +20,21 @@ public class UserDemo {
 
         UserManager manager = new UserManager();
 
-        manager.connectUsers(a, b);
-        System.out.println(a.isFriend(a.getFriendsList().getRoot(), b.getUser().getData()));
+        System.out.println(manager.connectUsers(a, b));
+        System.out.println(manager.connectUsers(a, b));
+        System.out.println(manager.connectUsers(a, e));
+        System.out.println(manager.connectUsers(b, c));
+        System.out.println(manager.connectUsers(a, d));
+        System.out.println(manager.connectUsers(a, d));
+        System.out.println(manager.connectUsers(b, e));
+        new UserPrinter(manager).printInfoAboutNetwork();
 
-        System.out.println(manager.connectUsers(a,b));
-        System.out.println(manager.connectUsers(a,e));
-        System.out.println(manager.connectUsers(b,c));
+        System.out.println(manager.removeConnection(a,b));
+        System.out.println(manager.removeConnection(a,b));
+        System.out.println(manager.removeConnection(a,e));
+        System.out.println(manager.removeConnection(a,c));
+        System.out.println(manager.removeConnection(b,e));
+
         new UserPrinter(manager).printInfoAboutNetwork();
     }
 }
