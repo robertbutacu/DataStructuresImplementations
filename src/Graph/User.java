@@ -78,7 +78,6 @@ public class User {
 
         //System.out.println("Inserting " + newFriend.getUser().getUsername() + " " + this.getUser().getUsername());
 
-
         this.friendsList.insert(this.friendsList.getRoot(), newFriend.getUser());
         //System.out.println(this.user.getUsername());
         //this.printFriends();
