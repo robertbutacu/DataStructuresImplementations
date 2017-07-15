@@ -8,6 +8,7 @@ import BinarySearchTree.TreeOperations;
 import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
+import java.util.TreeSet;
 
 /**
  * Created by Robert-PC on 7/13/2017.
@@ -36,7 +37,7 @@ public class User {
 
     public User(TreeNode user){
         this.user = user;
-        this.friendsList = new HashSet<>();
+        this.friendsList = new TreeSet<>();
     }
 
 

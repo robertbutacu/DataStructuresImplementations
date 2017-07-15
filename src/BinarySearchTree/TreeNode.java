@@ -5,7 +5,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 /**
  * Created by Robert-PC on 7/5/2017.
  */
-public class TreeNode {
+public class TreeNode implements Comparable<TreeNode>{
     private int data;
 
     private int id;
@@ -70,5 +70,10 @@ public class TreeNode {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    @Override
+    public int compareTo(TreeNode o) {
+        return this.getUsername().compareTo(o.getUsername());
     }
 }
