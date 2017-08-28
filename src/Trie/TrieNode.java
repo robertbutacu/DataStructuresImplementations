@@ -1,6 +1,7 @@
 package Trie;
 
 import java.util.*;
+
 /**
  * Created by Robert-PC on 8/28/2017.
  */
@@ -13,7 +14,7 @@ public class TrieNode {
         this.children = children;
     }
 
-    public TrieNode(char currentChar)  {
+    public TrieNode(char currentChar) {
         this.currentChar = currentChar;
     }
 

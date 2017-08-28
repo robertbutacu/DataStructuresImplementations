@@ -2,6 +2,7 @@ package Trie;
 
 import java.util.Arrays;
 import java.util.Optional;
+import java.util.Random;
 import java.util.stream.Stream;
 
 /**
@@ -41,7 +42,7 @@ public class TrieManager {
 
         if (child.isPresent())
             insertRecursive(child.get(), word, index + 1);
-        else{
+        else {
             TrieNode newChild = new TrieNode(word[index]);
             current.children.add(newChild);
             insertRecursive(newChild, word, index + 1);
@@ -49,11 +50,11 @@ public class TrieManager {
     }
 
     void printAllLetters(TrieNode trieNode) {
-        for (TrieNode a: trieNode.children
-             ) {
+        for (TrieNode a : trieNode.children
+                ) {
             System.out.print(a.getCurrentChar() + " ");
             printAllLetters(a);
-            if(a.getChildren().size() == 0 )
+            if (a.getChildren().size() == 0)
                 System.out.println("");
         }
     }
@@ -66,6 +67,16 @@ public class TrieManager {
         }
 
         return Optional.empty();
+    }
+
+
+    Either<String, String> test() {
+        Either<String, String> result = new Either<String, String>();
+        if (new Random().nextBoolean())
+            result.setLeft(Optional.of("Problem"));
+        else
+            result.setRight(Optional.of("No problem"));
+        return result;
     }
 
     public TrieNode getOrigin() {
