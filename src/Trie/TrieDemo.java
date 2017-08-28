@@ -21,7 +21,6 @@ public class TrieDemo {
 
 
         System.out.println(trieManager.search("roberttt".toCharArray()));
-
-
+        trieManager.printAllLetters(trieManager.getOrigin());
     }
 }

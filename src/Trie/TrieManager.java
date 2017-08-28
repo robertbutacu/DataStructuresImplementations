@@ -19,15 +19,14 @@ public class TrieManager {
     }
 
     boolean searchRecursive(Optional<TrieNode> wordChecker, char[] word, int index) {
-        if(word.length == 0)
+        if (word.length == index)
             return true;
 
         wordChecker = isLetterAChild(wordChecker.orElse(new TrieNode('\0')), word[index]);
         if (!wordChecker.isPresent())
             return false;
 
-        searchRecursive(wordChecker, word, index + 1);
-        return false;
+        return searchRecursive(wordChecker, word, index + 1);
     }
 
     void insert(char[] word) {
@@ -35,11 +34,13 @@ public class TrieManager {
     }
 
     void insertRecursive(TrieNode current, char[] word, int index) {
-        if(word.toString().indexOf(index) == -1)
+        if (word.length == index)
             return;
 
-        if(current.children.contains(word[index]))
-            insertRecursive(current.children.get(index), word, index + 1);
+        Optional<TrieNode> child = isLetterAChild(current, word[index]);
+
+        if (child.isPresent())
+            insertRecursive(child.get(), word, index + 1);
         else{
             TrieNode newChild = new TrieNode(word[index]);
             current.children.add(newChild);
@@ -47,14 +48,25 @@ public class TrieManager {
         }
     }
 
-    private Optional<TrieNode> isLetterAChild(TrieNode current, char letter) {
-        for (TrieNode child: current.children
+    void printAllLetters(TrieNode trieNode) {
+        for (TrieNode a: trieNode.children
              ) {
-            if(child.getCurrentChar() == letter)
+            System.out.println(a.getCurrentChar());
+            printAllLetters(a);
+        }
+    }
+
+    private Optional<TrieNode> isLetterAChild(TrieNode current, char letter) {
+        for (TrieNode child : current.children
+                ) {
+            if (child.getCurrentChar() == letter)
                 return Optional.of(child);
         }
 
         return Optional.empty();
     }
 
+    public TrieNode getOrigin() {
+        return origin;
+    }
 }
