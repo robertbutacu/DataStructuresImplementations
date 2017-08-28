@@ -7,17 +7,17 @@ import java.util.Vector;
  */
 public class BalanceBinaryTree {
 
-    public BalanceBinaryTree(){
+    public BalanceBinaryTree() {
     }
 
-    public TreeNode transformToAVL(TreeNode root){
+    public TreeNode transformToAVL(TreeNode root) {
         Vector<TreeNode> storage = new Vector<TreeNode>();
         storeNodes(root, storage);
         return buildBalancedTree(storage, 0, storage.size() - 1);
     }
 
-    private void storeNodes(TreeNode current, Vector<TreeNode> storage){
-        if(current == null)
+    private void storeNodes(TreeNode current, Vector<TreeNode> storage) {
+        if (current == null)
             return;
 
         storeNodes(current.getLeft(), storage);
@@ -25,16 +25,16 @@ public class BalanceBinaryTree {
         storeNodes(current.getRight(), storage);
     }
 
-    private TreeNode buildBalancedTree(Vector<TreeNode> storage, int start, int end){
-        if(start > end)
+    private TreeNode buildBalancedTree(Vector<TreeNode> storage, int start, int end) {
+        if (start > end)
             return null;
 
-        int mid = (start + end)/2 ;
+        int mid = (start + end) / 2;
 
         TreeNode current = storage.get(mid);
 
-        current.setLeft(buildBalancedTree(storage, start , mid-1));
-        current.setRight(buildBalancedTree(storage, mid + 1 , end));
+        current.setLeft(buildBalancedTree(storage, start, mid - 1));
+        current.setRight(buildBalancedTree(storage, mid + 1, end));
 
         return current;
     }

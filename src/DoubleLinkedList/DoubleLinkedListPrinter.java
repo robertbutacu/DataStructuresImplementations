@@ -5,39 +5,38 @@ package DoubleLinkedList;
  */
 public class DoubleLinkedListPrinter {
 
-    DoubleLinkedListManager doubleLinkedListManager ;
+    DoubleLinkedListManager doubleLinkedListManager;
 
 
-
-    public DoubleLinkedListPrinter(DoubleLinkedListManager doubleLinkedListManager){
+    public DoubleLinkedListPrinter(DoubleLinkedListManager doubleLinkedListManager) {
         this.doubleLinkedListManager = doubleLinkedListManager;
     }
 
-    public DoubleLinkedListPrinter(){
+    public DoubleLinkedListPrinter() {
         this.doubleLinkedListManager = null;
     }
 
 
-    public void printInfo(){
+    public void printInfo() {
         DoubleLinkedList iterator = doubleLinkedListManager.getHead();
 
-        if(iterator == null){
+        if (iterator == null) {
             System.out.println("The Double Linked List is empty.");
         }
 
-        while(iterator != null){
+        while (iterator != null) {
             System.out.println("House ID " +
                     iterator.getID() +
                     ". Street Name " +
                     iterator.getStreetName() +
                     ". Wealth :" +
                     iterator.getWealth());
-            if(iterator.getNext() != null)
+            if (iterator.getNext() != null)
                 System.out.println("Front neighbour ID : " + iterator.getNext().getID());
             else
                 System.out.println("No front neighbour.");
 
-            if(iterator.getPrevious() != null)
+            if (iterator.getPrevious() != null)
                 System.out.println("Back neighbour ID : " + iterator.getPrevious().getID());
             else
                 System.out.println("No back neighbour.");

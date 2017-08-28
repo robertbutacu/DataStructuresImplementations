@@ -8,7 +8,7 @@ package Stack;
 public class StackDemo {
     private StackArrayImpl stackArrayImplDemo;
 
-    public StackDemo(int size){
+    public StackDemo(int size) {
         stackArrayImplDemo = new StackArrayImpl<Integer>(size);
 
         System.out.println("Push : " + stackArrayImplDemo.push(1).get());

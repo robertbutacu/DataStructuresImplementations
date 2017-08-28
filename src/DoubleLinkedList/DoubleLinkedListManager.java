@@ -9,7 +9,7 @@ public class DoubleLinkedListManager {
 
     private int length;
 
-    public DoubleLinkedListManager(DoubleLinkedList head){
+    public DoubleLinkedListManager(DoubleLinkedList head) {
         this.head = head;
         this.tail = head;
         length += 1;
@@ -23,36 +23,36 @@ public class DoubleLinkedListManager {
         return tail;
     }
 
-    public DoubleLinkedListManager(){
+    public DoubleLinkedListManager() {
 
     }
 
-    public int getLength(){
+    public int getLength() {
         return this.length;
     }
 
 
-    public boolean insertHouseAfterPosition(int position, DoubleLinkedList toBeInserted){
-        if(position < 0)
+    public boolean insertHouseAfterPosition(int position, DoubleLinkedList toBeInserted) {
+        if (position < 0)
             return false;
 
         //replacing head
-        if(position == 0){
+        if (position == 0) {
             return replaceHead(toBeInserted);
         }
 
         DoubleLinkedList iterator = this.head;
         int currentPosition = 0;
 
-        while(iterator != null){
+        while (iterator != null) {
             //found position
-            if(currentPosition == position){
+            if (currentPosition == position) {
                 replaceOnFoundPosition(toBeInserted, iterator);
 
             }
 
             //position outside of linked list's range
-            if((currentPosition + 1) < position && iterator.getNext() == null){
+            if ((currentPosition + 1) < position && iterator.getNext() == null) {
                 replaceTail(toBeInserted, iterator);
 
             }
@@ -65,9 +65,9 @@ public class DoubleLinkedListManager {
 
     }
 
-    public void add(DoubleLinkedList newItem){
+    public void add(DoubleLinkedList newItem) {
         //null list
-        if(this.head == null){
+        if (this.head == null) {
             this.head = newItem;
             this.tail = newItem;
             this.length += 1;
@@ -83,16 +83,16 @@ public class DoubleLinkedListManager {
         this.length += 1;
     }
 
-    public void deleteHouseById(int id){
+    public void deleteHouseById(int id) {
         DoubleLinkedList iterator = this.head;
 
-        while(iterator != null){
-            if(iterator.getID() == id){
+        while (iterator != null) {
+            if (iterator.getID() == id) {
                 //checking whether its not the last node
-                if(iterator.getNext() != null)
+                if (iterator.getNext() != null)
                     iterator.getNext().setPrevious(iterator.getPrevious());
 
-                if(iterator.getPrevious() != null)
+                if (iterator.getPrevious() != null)
                     iterator.getPrevious().setNext(iterator.getNext());
                     //its the head :/ the king has died, long live the king.
                 else
@@ -106,13 +106,13 @@ public class DoubleLinkedListManager {
 
     }
 
-    private void replaceTail(DoubleLinkedList toBeInserted, DoubleLinkedList tail){
+    private void replaceTail(DoubleLinkedList toBeInserted, DoubleLinkedList tail) {
         tail.setNext(toBeInserted);
         toBeInserted.setPrevious(tail);
         toBeInserted.setNext(null);
     }
 
-    private boolean replaceHead(DoubleLinkedList toBeInserted){
+    private boolean replaceHead(DoubleLinkedList toBeInserted) {
         toBeInserted.setNext(this.head);
         toBeInserted.setPrevious(null);
 
@@ -123,7 +123,7 @@ public class DoubleLinkedListManager {
     }
 
 
-    private void replaceOnFoundPosition( DoubleLinkedList toBeInserted, DoubleLinkedList currentNode){
+    private void replaceOnFoundPosition(DoubleLinkedList toBeInserted, DoubleLinkedList currentNode) {
         currentNode.getPrevious().setNext(toBeInserted);
         toBeInserted.setPrevious(currentNode.getPrevious());
 

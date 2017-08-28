@@ -5,11 +5,11 @@ package Queue;
  */
 public class QueueDemo {
 
-    public QueueDemo(){
+    public QueueDemo() {
 
     }
 
-    public void startDemo(){
+    public void startDemo() {
         QueueArrayImpl queueArray = new QueueArrayImpl<Integer>(5);
 
         System.out.println(queueArray.peek().orElse("Empty queue"));

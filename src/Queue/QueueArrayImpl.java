@@ -15,24 +15,25 @@ public class QueueArrayImpl<T> {
 
     private int rear = -1;
 
-    public QueueArrayImpl(int size){
+    public QueueArrayImpl(int size) {
         queue = (T[]) new Object[size];
         this.queueSize = size;
 
     }
 
-    public boolean isEmpty(){
+    public boolean isEmpty() {
         return (front == -1 && rear == -1);
     }
 
-    public Optional<T> dequeue(){
-        if(isEmpty() ){
+    public Optional<T> dequeue() {
+        if (isEmpty()) {
             return Optional.empty();
         }
 
-        if(front == rear){
+        if (front == rear) {
             T result = queue[front];
-            front = -1; rear = -1;
+            front = -1;
+            rear = -1;
             return Optional.ofNullable(result);
 
         }
@@ -43,14 +44,15 @@ public class QueueArrayImpl<T> {
 
     }
 
-    public void enqueue(T element){
-        if(front == -1 && rear == -1){
-            front = 0; rear = 0;
+    public void enqueue(T element) {
+        if (front == -1 && rear == -1) {
+            front = 0;
+            rear = 0;
             queue[front] = element;
             return;
         }
 
-        if((rear + 1) % queueSize == front){
+        if ((rear + 1) % queueSize == front) {
             System.out.println("Queue full. Come back later.");
             return;
         }
@@ -59,10 +61,10 @@ public class QueueArrayImpl<T> {
 
     }
 
-    public Optional<T> peek(){
-        try{
+    public Optional<T> peek() {
+        try {
             return Optional.ofNullable(queue[front]);
-        }catch(ArrayIndexOutOfBoundsException e){
+        } catch (ArrayIndexOutOfBoundsException e) {
             return Optional.empty();
         }
     }

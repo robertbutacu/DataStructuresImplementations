@@ -67,10 +67,8 @@ public class DoubleLinkedList {
     }
 
 
-
-
     //insertion
-    public DoubleLinkedList(String streetName, int familyCount, int wealth, DoubleLinkedList previous, DoubleLinkedList next){
+    public DoubleLinkedList(String streetName, int familyCount, int wealth, DoubleLinkedList previous, DoubleLinkedList next) {
         this.ID = ID_GENERATOR.getAndIncrement();
         this.streetName = streetName;
         this.familyCount = familyCount;
@@ -84,7 +82,7 @@ public class DoubleLinkedList {
     }
 
     //last node
-    public DoubleLinkedList(String streetName, int familyCount, int wealth, DoubleLinkedList previous){
+    public DoubleLinkedList(String streetName, int familyCount, int wealth, DoubleLinkedList previous) {
         this.ID = ID_GENERATOR.getAndIncrement();
         this.streetName = streetName;
         this.familyCount = familyCount;
@@ -97,7 +95,7 @@ public class DoubleLinkedList {
     }
 
     //first node
-    public DoubleLinkedList(String streetName, int familyCount, int wealth){
+    public DoubleLinkedList(String streetName, int familyCount, int wealth) {
         this.ID = ID_GENERATOR.getAndIncrement();
         this.streetName = streetName;
         this.familyCount = familyCount;

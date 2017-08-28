@@ -7,11 +7,11 @@ import BinarySearchTree.TreeNode;
  */
 public class UserDemo {
 
-    public UserDemo(){
+    public UserDemo() {
 
     }
 
-    public void getDemo(){
+    public void getDemo() {
         User a = new User(new TreeNode(1, "a"));
         User b = new User(new TreeNode(2, "b"));
         User c = new User(new TreeNode(3, "c"));
@@ -29,11 +29,11 @@ public class UserDemo {
         System.out.println(manager.connectUsers(b, e));
         new UserPrinter(manager).printInfoAboutNetwork();
 
-        System.out.println(manager.removeConnection(a,b));
-        System.out.println(manager.removeConnection(a,b));
-        System.out.println(manager.removeConnection(a,e));
-        System.out.println(manager.removeConnection(a,c));
-        System.out.println(manager.removeConnection(b,e));
+        System.out.println(manager.removeConnection(a, b));
+        System.out.println(manager.removeConnection(a, b));
+        System.out.println(manager.removeConnection(a, e));
+        System.out.println(manager.removeConnection(a, c));
+        System.out.println(manager.removeConnection(b, e));
 
         new UserPrinter(manager).printInfoAboutNetwork();
     }

@@ -1,6 +1,7 @@
 package BinarySearchTree;
 
 import Queue.QueueArrayImpl;
+
 import java.util.Arrays;
 import java.util.Optional;
 
@@ -11,21 +12,21 @@ public class TreeOperations {
 
     TreeNode root;
 
-    public TreeOperations(TreeNode root){
+    public TreeOperations(TreeNode root) {
         this.root = root;
     }
 
-    public TreeOperations(){
+    public TreeOperations() {
 
     }
 
-    public Integer getHeight(){
+    public Integer getHeight() {
 
         return getHeight(root);
     }
 
-    private Integer getHeight(TreeNode treeNode){
-        if(treeNode == null)
+    private Integer getHeight(TreeNode treeNode) {
+        if (treeNode == null)
             return -1;
 
         int leftHeight = getHeight(treeNode.getLeft());
@@ -35,14 +36,14 @@ public class TreeOperations {
 
     }
 
-    public Optional<String> findMax(){
+    public Optional<String> findMax() {
         TreeNode currentNode = root;
 
-        if(currentNode == null){
+        if (currentNode == null) {
             return Optional.empty();
         }
 
-        while(currentNode.getRight() != null){
+        while (currentNode.getRight() != null) {
             currentNode = currentNode.getRight();
         }
 
@@ -50,29 +51,29 @@ public class TreeOperations {
 
     }
 
-    public void breadthFirstSearch(){
+    public void breadthFirstSearch() {
         QueueArrayImpl<TreeNode> queueArray = new QueueArrayImpl<>(10);
-        if(this.root != null)
+        if (this.root != null)
             queueArray.enqueue(root);
         BFS(queueArray);
 
     }
 
-    private void BFS(QueueArrayImpl<TreeNode> queueArray){
+    private void BFS(QueueArrayImpl<TreeNode> queueArray) {
         //finished parsing BST
-        if(queueArray.isEmpty())
+        if (queueArray.isEmpty())
             return;
         TreeNode current = queueArray.dequeue().get();
 
         System.out.println("Current username : " + current.getUsername());
 
-        if(current.getLeft() != null){
+        if (current.getLeft() != null) {
             //System.out.println("Enqueue left: " + current.getLeft().getUsername());
             queueArray.enqueue(current.getLeft());
 
         }
 
-        if(current.getRight() != null){
+        if (current.getRight() != null) {
             //System.out.println("Enqueue right: " + current.getRight().getUsername());
             queueArray.enqueue(current.getRight());
         }
@@ -80,8 +81,8 @@ public class TreeOperations {
         BFS(queueArray);
     }
 
-    public void inorderSearch(TreeNode root){
-        if(root == null)
+    public void inorderSearch(TreeNode root) {
+        if (root == null)
             return;
 
         inorderSearch(root.getLeft());
@@ -90,8 +91,8 @@ public class TreeOperations {
 
     }
 
-    public void preorderSearch(TreeNode root){
-        if(root == null)
+    public void preorderSearch(TreeNode root) {
+        if (root == null)
             return;
 
         System.out.println("Current value : " + root.getData());
@@ -99,9 +100,9 @@ public class TreeOperations {
         preorderSearch(root.getRight());
     }
 
-    public void postOrderSearch(TreeNode root){
+    public void postOrderSearch(TreeNode root) {
 
-        if(root == null)
+        if (root == null)
             return;
 
         postOrderSearch(root.getLeft());
@@ -109,25 +110,25 @@ public class TreeOperations {
         System.out.println("Current value : " + root.getData());
     }
 
-    public Optional<String> findMin(){
+    public Optional<String> findMin() {
         TreeNode currentNode = root;
 
-        if(currentNode == null){
+        if (currentNode == null) {
             return Optional.empty();
         }
 
-        while(currentNode.getLeft() != null)
+        while (currentNode.getLeft() != null)
             currentNode = currentNode.getLeft();
 
         return Optional.of(Integer.toString(currentNode.getData()));
     }
 
-    public boolean isBinarySearchTree(){
+    public boolean isBinarySearchTree() {
         return isBST(root);
     }
 
-    private boolean isBST(TreeNode current){
-        if(current == null)
+    private boolean isBST(TreeNode current) {
+        if (current == null)
             return true;
 
         //in order to be a BST, any element from the left sub-tree must be lower or equal than the current node's data
@@ -138,13 +139,13 @@ public class TreeOperations {
                 && isBST(current.getRight()));
     }
 
-    public boolean isBalanced(TreeNode root){
-        if(root == null)
+    public boolean isBalanced(TreeNode root) {
+        if (root == null)
             return true;
 
-        if(!Arrays.asList(-1,0,1).contains(new TreeOperations(root.getLeft()).getHeight() -
-                                                new TreeOperations(root.getRight()).getHeight()))
-                return false;
+        if (!Arrays.asList(-1, 0, 1).contains(new TreeOperations(root.getLeft()).getHeight() -
+                new TreeOperations(root.getRight()).getHeight()))
+            return false;
         return isBalanced(root.getRight()) && isBalanced(root.getLeft());
 
     }

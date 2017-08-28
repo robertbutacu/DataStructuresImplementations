@@ -46,7 +46,7 @@ public class StackArrayImpl<T> {
 
     public Optional<T> pop() {
         try {
-            return Optional.ofNullable(stack[--currentPosition+1]);
+            return Optional.ofNullable(stack[--currentPosition + 1]);
         } catch (ArrayIndexOutOfBoundsException e) {
             currentPosition += 1;
             return Optional.empty();
@@ -59,10 +59,9 @@ public class StackArrayImpl<T> {
         if (currentPosition == -1) {
             return Optional.empty();
         }
-        try{
+        try {
             return Optional.ofNullable(stack[currentPosition]);
-        }
-        catch(IndexOutOfBoundsException e){
+        } catch (IndexOutOfBoundsException e) {
             return Optional.empty();
 
         }

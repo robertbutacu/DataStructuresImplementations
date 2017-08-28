@@ -10,10 +10,10 @@ public class DoubleLinkedListDemo {
     //TODO Optional[DoubleLinkedList] in DBL class and refactor to not work with null
 
 
-    public void getDemo(){
+    public void getDemo() {
         DoubleLinkedListManager linkedListManager;
 
-        DoubleLinkedList firstHouse = new DoubleLinkedList("Random Street",3,12300);
+        DoubleLinkedList firstHouse = new DoubleLinkedList("Random Street", 3, 12300);
         DoubleLinkedList secondHouse = new DoubleLinkedList("Random Street", 4, 12310);
 
         DoubleLinkedList thirdHouse = new DoubleLinkedList("Random Street", 6, 123123);
@@ -31,7 +31,7 @@ public class DoubleLinkedListDemo {
         listPrinter.printInfo();
 
         DoubleLinkedList randomHouse = new DoubleLinkedList("Really Random", 2, 12312);
-        linkedListManager.insertHouseAfterPosition(3,randomHouse);
+        linkedListManager.insertHouseAfterPosition(3, randomHouse);
 
         System.out.println("Second");
         listPrinter.printInfo();
@@ -51,7 +51,7 @@ public class DoubleLinkedListDemo {
 
         anotherLinkedListManager.add(newHouse);
 
-        newHouse = new DoubleLinkedList("Random Again", 123,123);
+        newHouse = new DoubleLinkedList("Random Again", 123, 123);
 
         anotherLinkedListManager.add(newHouse);
 
@@ -59,7 +59,7 @@ public class DoubleLinkedListDemo {
         listPrinter.printInfo();
     }
 
-    public DoubleLinkedListDemo(){
+    public DoubleLinkedListDemo() {
 
     }
 }

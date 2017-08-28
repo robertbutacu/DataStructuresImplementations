@@ -8,22 +8,22 @@ import BinarySearchTree.TreeNode;
 public class UserPrinter {
     private UserManager userManager;
 
-    public UserPrinter(UserManager userManager){
+    public UserPrinter(UserManager userManager) {
         this.userManager = userManager;
     }
 
-    public void printInfoAboutNetwork(){
+    public void printInfoAboutNetwork() {
         System.out.println("Starting to print info.");
-        for(User u : userManager.getUsersList()){
+        for (User u : userManager.getUsersList()) {
             printInfoAboutUser(u);
         }
     }
 
-    private void printInfoAboutUser(User u){
+    private void printInfoAboutUser(User u) {
         System.out.println("User id :" + u.getUser().getId() + " Username : " + u.getUser().getUsername());
         System.out.println("Friends list :");
 
-        for(TreeNode t : u.getFriendsList())
+        for (TreeNode t : u.getFriendsList())
             System.out.println("Current friend : " + t.getUsername());
 
         System.out.println("\n\n");

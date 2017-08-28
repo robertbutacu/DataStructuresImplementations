@@ -9,15 +9,15 @@ import java.util.Set;
 public class UserManager {
     private Set<User> usersList;
 
-    public UserManager(Set<User> usersList){
+    public UserManager(Set<User> usersList) {
         this.usersList = usersList;
     }
 
-    public UserManager(){
+    public UserManager() {
         this.usersList = new HashSet<>();
     }
 
-    public boolean connectUsers(User firstUser, User secondUser){
+    public boolean connectUsers(User firstUser, User secondUser) {
         this.addUser(firstUser);
         this.addUser(secondUser);
 
@@ -25,12 +25,12 @@ public class UserManager {
                 secondUser.getFriendsList().add(firstUser.getUser());
     }
 
-    public boolean removeConnection(User firstUser, User secondUser){
+    public boolean removeConnection(User firstUser, User secondUser) {
         return firstUser.getFriendsList().remove(secondUser.getUser()) &&
                 secondUser.getFriendsList().remove(firstUser.getUser());
     }
 
-    public boolean addUser(User user){
+    public boolean addUser(User user) {
         return this.usersList.add(user);
     }
 
@@ -43,16 +43,16 @@ public class UserManager {
         this.usersList = usersList;
     }
 
-    public void printUsersList(){
-        if(usersList.isEmpty())
+    public void printUsersList() {
+        if (usersList.isEmpty())
             System.out.println("There are no people currently in the network.");
 
-        for(User u : usersList){
+        for (User u : usersList) {
             System.out.println("Username :" + u.getUser().getUsername());
         }
     }
 
-    public void printFriendsOfUser(User user){
+    public void printFriendsOfUser(User user) {
         user.printFriends();
     }
 }

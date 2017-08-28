@@ -5,20 +5,20 @@ package BinarySearchTree;
  */
 public class TreeDemo {
 
-    public TreeDemo(){
+    public TreeDemo() {
 
     }
 
-    public void getDemo(){
+    public void getDemo() {
 
         TreeManager treeManager = new TreeManager();
 
-        treeManager.insert(treeManager.getRoot(),new TreeNode(3,"A"));
-        treeManager.insert(treeManager.getRoot(),new TreeNode(1,"B"));
-        treeManager.insert(treeManager.getRoot(),new TreeNode(2,"C"));
-        treeManager.insert(treeManager.getRoot(),new TreeNode(4,"D"));
-        treeManager.insert(treeManager.getRoot(),new TreeNode(5,"E"));
-        treeManager.insert(treeManager.getRoot(),new TreeNode(0,"F"));
+        treeManager.insert(treeManager.getRoot(), new TreeNode(3, "A"));
+        treeManager.insert(treeManager.getRoot(), new TreeNode(1, "B"));
+        treeManager.insert(treeManager.getRoot(), new TreeNode(2, "C"));
+        treeManager.insert(treeManager.getRoot(), new TreeNode(4, "D"));
+        treeManager.insert(treeManager.getRoot(), new TreeNode(5, "E"));
+        treeManager.insert(treeManager.getRoot(), new TreeNode(0, "F"));
 
         System.out.println("Searching for 1: " + treeManager.search(1));
 
@@ -57,18 +57,18 @@ public class TreeDemo {
 
         System.out.println("Root after deletion");
 
-        treeManager.delete(treeManager.getRoot(),3);
+        treeManager.delete(treeManager.getRoot(), 3);
 
         System.out.println(treeManager.getRoot().getData());
-        treeManager.delete(treeManager.getRoot(),4);
-        treeManager.delete(treeManager.getRoot(),0);
-        treeManager.delete(treeManager.getRoot(),5);
-        treeManager.delete(treeManager.getRoot(),5);
+        treeManager.delete(treeManager.getRoot(), 4);
+        treeManager.delete(treeManager.getRoot(), 0);
+        treeManager.delete(treeManager.getRoot(), 5);
+        treeManager.delete(treeManager.getRoot(), 5);
         treeManager.delete(treeManager.getRoot(), 10);
         treeManager.delete(treeManager.getRoot(), 2);
         treeManager.delete(treeManager.getRoot(), 5);
-        treeManager.delete(treeManager.getRoot(),1);
-        treeManager.delete(treeManager.getRoot(),3);
+        treeManager.delete(treeManager.getRoot(), 1);
+        treeManager.delete(treeManager.getRoot(), 3);
 
         treeOperations.setRoot(treeManager.getRoot());
         System.out.println("After deletion");
@@ -78,14 +78,13 @@ public class TreeDemo {
         System.out.println(treeOperations.isBalanced(treeOperations.getRoot()));
 
         System.out.println("Before : ");
-        treeManager.setRoot(new TreeNode(1,"F"));
-        treeManager.insert(treeManager.getRoot(), new TreeNode(2,"A"));
-        treeManager.insert(treeManager.getRoot(), new TreeNode(3,"B"));
-        treeManager.insert(treeManager.getRoot(), new TreeNode(4,"C"));
-        treeManager.insert(treeManager.getRoot(), new TreeNode(5,"D"));
-        treeManager.insert(treeManager.getRoot(), new TreeNode(6,"E"));
-        treeManager.insert(treeManager.getRoot(), new TreeNode(7,"F"));
-
+        treeManager.setRoot(new TreeNode(1, "F"));
+        treeManager.insert(treeManager.getRoot(), new TreeNode(2, "A"));
+        treeManager.insert(treeManager.getRoot(), new TreeNode(3, "B"));
+        treeManager.insert(treeManager.getRoot(), new TreeNode(4, "C"));
+        treeManager.insert(treeManager.getRoot(), new TreeNode(5, "D"));
+        treeManager.insert(treeManager.getRoot(), new TreeNode(6, "E"));
+        treeManager.insert(treeManager.getRoot(), new TreeNode(7, "F"));
 
 
         treeOperations.setRoot(treeManager.getRoot());
