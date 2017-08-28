@@ -21,8 +21,8 @@ public class TrieDemo {
         trieManager.insert("anotherTest".toCharArray());
         System.out.println("Is anotherTest in the trie: " + trieManager.search("anotherTest".toCharArray()));
 
-        System.out.println("Insert the word testa");
-        trieManager.insert("testa".toCharArray());
+        System.out.println("Insert the word tasta");
+        trieManager.insert("tast".toCharArray());
 
 
         System.out.println("Inserting the word anotherTast");

@@ -80,16 +80,25 @@ public class TrieManager {
                                                    Either<String, String> result,
                                                    char[] word,
                                                    int index) {
+        if(index == word.length){
+            result.setRight(Optional.of("The word hasn't been found"));
+            return result;
+        }
+
         for (TrieNode child: current.getChildren()
              ) {
             if(child.getCurrentChar() == word[index]){
                 if(child.getChildren().size() == 0){
-                    current.getChildren().remove(child);
+                    current.children.remove(child);
                     result.setLeft(Optional.of("Word has been deleted"));
                     return result;
                 }
                 else{
-                    return deleteRecursive(child, result, word, index + 1);
+                    deleteRecursive(child, result, word, index + 1);
+                    if(child.getChildren().size() == 0)
+                        current.children.remove(child);
+                    result.setRight(Optional.of("The word has been deleted"));
+                    return result;
                 }
             }
         }
