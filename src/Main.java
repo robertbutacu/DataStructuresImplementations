@@ -5,6 +5,7 @@ import DoubleLinkedList.DoubleLinkedListDemo;
 import Graph.UserDemo;
 import Queue.QueueDemo;
 import Stack.StackDemo;
+import Trie.TrieDemo;
 
 import java.util.ArrayList;
 
@@ -27,7 +28,9 @@ public class  Main {
 
         //new TreeDemo().getDemo();
 
-        new UserDemo().getDemo();
+        //new UserDemo().getDemo();
+
+        new TrieDemo().getDemo();
 
     }
 }

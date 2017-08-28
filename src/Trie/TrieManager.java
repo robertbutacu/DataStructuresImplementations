@@ -10,22 +10,44 @@ import java.util.stream.Stream;
 public class TrieManager {
     TrieNode origin;
 
-    public TrieManager()  {
+    public TrieManager() {
         origin = new TrieNode('\0');
     }
 
-    boolean searchWord(char[] word) {
-        Optional<TrieNode> wordChecker = Optional.of(origin);
-        for (char a: word
-             ) {
-            wordChecker = isLetterAChild(wordChecker.orElse(new TrieNode('\0')), a);
-            if(!wordChecker.isPresent())
-                return false;
-        }
-        return true;
+    boolean search(char[] word) {
+        return searchRecursive(Optional.of(origin), word, 0);
     }
 
-    Optional<TrieNode> isLetterAChild(TrieNode current, char letter)  {
+    boolean searchRecursive(Optional<TrieNode> wordChecker, char[] word, int index) {
+        if(word.length == 0)
+            return true;
+
+        wordChecker = isLetterAChild(wordChecker.orElse(new TrieNode('\0')), word[index]);
+        if (!wordChecker.isPresent())
+            return false;
+
+        searchRecursive(wordChecker, word, index + 1);
+        return false;
+    }
+
+    void insert(char[] word) {
+        insertRecursive(origin, word, 0);
+    }
+
+    void insertRecursive(TrieNode current, char[] word, int index) {
+        if(word.toString().indexOf(index) == -1)
+            return;
+
+        if(current.children.contains(word[index]))
+            insertRecursive(current.children.get(index), word, index + 1);
+        else{
+            TrieNode newChild = new TrieNode(word[index]);
+            current.children.add(newChild);
+            insertRecursive(newChild, word, index + 1);
+        }
+    }
+
+    private Optional<TrieNode> isLetterAChild(TrieNode current, char letter) {
         return Optional.ofNullable(current.children.get(current.children.indexOf(letter)));
     }
 
