@@ -16,4 +16,13 @@ public class TrieNode {
     public TrieNode(char currentChar)  {
         this.currentChar = currentChar;
     }
+
+    public char getCurrentChar() {
+        return currentChar;
+    }
+
+
+    public ArrayList<TrieNode> getChildren() {
+        return children;
+    }
 }

@@ -48,7 +48,13 @@ public class TrieManager {
     }
 
     private Optional<TrieNode> isLetterAChild(TrieNode current, char letter) {
-        return Optional.ofNullable(current.children.get(current.children.indexOf(letter)));
+        for (TrieNode child: current.children
+             ) {
+            if(child.getCurrentChar() == letter)
+                return Optional.of(child);
+        }
+
+        return Optional.empty();
     }
 
 }
