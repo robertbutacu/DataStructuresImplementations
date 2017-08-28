@@ -1,15 +1,15 @@
 package Trie;
 
-import java.util.Arrays;
+import Utils.Either;
+
 import java.util.Optional;
 import java.util.Random;
-import java.util.stream.Stream;
 
 /**
  * Created by Robert-PC on 8/28/2017.
  */
 public class TrieManager {
-    TrieNode origin;
+    private TrieNode origin;
 
     public TrieManager() {
         origin = new TrieNode('\0');
@@ -67,6 +67,34 @@ public class TrieManager {
         }
 
         return Optional.empty();
+    }
+
+    public Either<String, String> delete(char[] word) {
+        return deleteRecursive(origin,
+                new Either<>(),
+                word,
+                0);
+    }
+
+    private Either<String, String> deleteRecursive(TrieNode current,
+                                                   Either<String, String> result,
+                                                   char[] word,
+                                                   int index) {
+        for (TrieNode child: current.getChildren()
+             ) {
+            if(child.getCurrentChar() == word[index]){
+                if(child.getChildren().size() == 0){
+                    current.getChildren().remove(child);
+                    result.setLeft(Optional.of("Word has been deleted"));
+                    return result;
+                }
+                else{
+                    return deleteRecursive(child, result, word, index + 1);
+                }
+            }
+        }
+        result.setRight(Optional.of("The word is not stored"));
+        return result;
     }
 
 

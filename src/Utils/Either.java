@@ -1,4 +1,4 @@
-package Trie;
+package Utils;
 
 import java.util.Optional;
 

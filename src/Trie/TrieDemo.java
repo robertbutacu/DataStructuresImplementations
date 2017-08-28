@@ -21,6 +21,10 @@ public class TrieDemo {
         trieManager.insert("anotherTest".toCharArray());
         System.out.println("Is anotherTest in the trie: " + trieManager.search("anotherTest".toCharArray()));
 
+        System.out.println("Insert the word testa");
+        trieManager.insert("testa".toCharArray());
+
+
         System.out.println("Inserting the word anotherTast");
         trieManager.insert("anotherTast".toCharArray());
         System.out.println("Is anotherTest in the trie: " + trieManager.search("anotherTast".toCharArray()));
@@ -29,6 +33,11 @@ public class TrieDemo {
         System.out.println("Printing all letters from the trie ( should be somehow hierarchical) ");
         trieManager.printAllLetters(trieManager.getOrigin());
 
-        System.out.println(trieManager.test().get().get());
+        System.out.println("Deleting test " + trieManager.delete("test".toCharArray()).get().get());
+
+        System.out.println("Printing all letters from the trie ( should be somehow hierarchical) ");
+        trieManager.printAllLetters(trieManager.getOrigin());
+
+        System.out.println("Testing either : " + trieManager.test().get().get());
     }
 }
