@@ -26,6 +26,7 @@ public class TrieDemo {
         System.out.println("Is anotherTest in the trie: " + trieManager.search("anotherTast".toCharArray()));
 
         System.out.println("Is anotherTist in the trie: " + trieManager.search("anotherTist".toCharArray()));
+        System.out.println("Printing all letters from the trie ( should be somehow hierarchical) ");
         trieManager.printAllLetters(trieManager.getOrigin());
     }
 }
