@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84f14702-2004-40df-87c6-b0c2efe87d91" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/description.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -114,7 +120,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+              <caret line="1" column="4" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -849,14 +855,7 @@
       <workItem from="1500137608266" duration="2817000" />
       <workItem from="1500494950866" duration="30000" />
       <workItem from="1500496660969" duration="25000" />
-      <workItem from="1503908315772" duration="635000" />
-    </task>
-    <task id="LOCAL-00004" summary="Manager supports empty Linked Lists.">
-      <created>1498985457424</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1498985457424</updated>
+      <workItem from="1503908315772" duration="719000" />
     </task>
     <task id="LOCAL-00005" summary="Added ListPrinter , which was cut from ListManager.">
       <created>1498985981501</created>
@@ -1194,11 +1193,18 @@
       <option name="project" value="LOCAL" />
       <updated>1500143828295</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Im back - added gitignore.">
+      <created>1503909688913</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1503909688915</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86169000" />
+    <option name="totallyTimeSpent" value="86253000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1242,7 +1248,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="isBST implementation." />
     <MESSAGE value="Added Depth First Search operations." />
     <MESSAGE value="Added deletion of a TreeNode, still needs working." />
     <MESSAGE value="All goochy." />
@@ -1267,7 +1272,8 @@
     <MESSAGE value="Implemented Graph using TreeSet&lt;&gt;, more efficient." />
     <MESSAGE value="Removed unnecesary comments." />
     <MESSAGE value="Removed unnecessary includes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed unnecessary includes." />
+    <MESSAGE value="Im back - added gitignore." />
+    <option name="LAST_COMMIT_MESSAGE" value="Im back - added gitignore." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1659,7 +1665,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+          <caret line="1" column="4" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
           <folding />
         </state>
       </provider>
