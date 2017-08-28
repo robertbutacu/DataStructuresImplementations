@@ -80,6 +80,7 @@ public class TrieManager {
                                                    Either<String, String> result,
                                                    char[] word,
                                                    int index) {
+        // checking whether the leafs were reached, meaning the current word is not stored
         if(index == word.length){
             result.setRight(Optional.of("The word hasn't been found"));
             return result;
@@ -88,20 +89,22 @@ public class TrieManager {
         for (TrieNode child: current.getChildren()
              ) {
             if(child.getCurrentChar() == word[index]){
+                //there isn't anything further
                 if(child.getChildren().size() == 0){
                     current.children.remove(child);
                     result.setLeft(Optional.of("Word has been deleted"));
                     return result;
                 }
+                //there is something further
                 else{
                     deleteRecursive(child, result, word, index + 1);
                     if(child.getChildren().size() == 0)
                         current.children.remove(child);
-                    result.setRight(Optional.of("The word has been deleted"));
                     return result;
                 }
             }
         }
+        //the current letter hasn't been found in any of the current node's children, meaning the word doesn't exist in the trie
         result.setRight(Optional.of("The word is not stored"));
         return result;
     }

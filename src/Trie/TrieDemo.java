@@ -35,6 +35,10 @@ public class TrieDemo {
 
         System.out.println("Deleting test " + trieManager.delete("test".toCharArray()).get().get());
 
+        System.out.println("Deleting tgst " + trieManager.delete("tgst".toCharArray()).get().get());
+
+        System.out.println("Deleting testt " + trieManager.delete("tgst".toCharArray()).get().get());
+
         System.out.println("Printing all letters from the trie ( should be somehow hierarchical) ");
         trieManager.printAllLetters(trieManager.getOrigin());
 
