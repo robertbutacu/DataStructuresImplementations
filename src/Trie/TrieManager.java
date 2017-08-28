@@ -51,7 +51,7 @@ public class TrieManager {
     void printAllLetters(TrieNode trieNode) {
         for (TrieNode a: trieNode.children
              ) {
-            System.out.println(a.getCurrentChar());
+            System.out.print(a.getCurrentChar() + " ");
             printAllLetters(a);
         }
     }

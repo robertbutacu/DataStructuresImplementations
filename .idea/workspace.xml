@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="84f14702-2004-40df-87c6-b0c2efe87d91" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Trie/TrieDemo.java" afterPath="$PROJECT_DIR$/src/Trie/TrieDemo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Trie/TrieManager.java" afterPath="$PROJECT_DIR$/src/Trie/TrieManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Trie/TrieNode.java" afterPath="$PROJECT_DIR$/src/Trie/TrieNode.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -101,7 +101,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TrieNode.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TrieNode.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Trie/TrieNode.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="185">
@@ -118,19 +118,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TrieManager.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TrieManager.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Trie/TrieManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="54" column="9" lean-forward="true" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
+            <state relative-caret-position="210">
+              <caret line="55" column="9" lean-forward="true" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#220#221#0" expanded="true" />
                 <element signature="e#263#264#0" expanded="true" />
                 <element signature="e#298#299#0" expanded="true" />
                 <element signature="e#366#367#0" expanded="true" />
-                <element signature="e#779#780#0" expanded="true" />
-                <element signature="e#827#828#0" expanded="true" />
+                <element signature="e#769#770#0" expanded="true" />
+                <element signature="e#817#818#0" expanded="true" />
+                <element signature="e#1831#1832#0" expanded="true" />
+                <element signature="e#1860#1861#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -139,8 +141,8 @@
       <file leaf-file-name="TrieDemo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Trie/TrieDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="151">
+              <caret line="27" column="91" lean-forward="false" selection-start-line="27" selection-start-column="91" selection-end-line="27" selection-end-column="91" />
               <folding>
                 <element signature="e#171#172#0" expanded="true" />
                 <element signature="e#218#219#0" expanded="true" />
@@ -173,6 +175,7 @@
       <find>jordan</find>
       <find>trevor</find>
       <find>Optional</find>
+      <find>print</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -212,10 +215,10 @@
         <option value="$PROJECT_DIR$/src/Stack/StackArrayImpl.java" />
         <option value="$PROJECT_DIR$/src/Stack/StackDemo.java" />
         <option value="$PROJECT_DIR$/src/Trie/Trie.java" />
-        <option value="$PROJECT_DIR$/src/Trie/TrieDemo.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Trie/TrieNode.java" />
         <option value="$PROJECT_DIR$/src/Trie/TrieManager.java" />
+        <option value="$PROJECT_DIR$/src/Trie/TrieDemo.java" />
       </list>
     </option>
   </component>
@@ -911,21 +914,7 @@
       <workItem from="1500494950866" duration="30000" />
       <workItem from="1500496660969" duration="25000" />
       <workItem from="1503908315772" duration="719000" />
-      <workItem from="1503911004605" duration="4431000" />
-    </task>
-    <task id="LOCAL-00009" summary="Added stack.">
-      <created>1499024117615</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1499024117616</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Generic Stack Implementation. Added ExpressionParser.">
-      <created>1499099086253</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1499099086253</updated>
+      <workItem from="1503911004605" duration="5884000" />
     </task>
     <task id="LOCAL-00011" summary="Stack now returns Optional&lt;T&gt;.">
       <created>1499101855121</created>
@@ -1256,11 +1245,25 @@
       <option name="project" value="LOCAL" />
       <updated>1503915272532</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="isLetterAChild() should be working fine now.">
+      <created>1503915554727</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1503915554727</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Now it works.">
+      <created>1503916507564</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1503916507564</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90684000" />
+    <option name="totallyTimeSpent" value="92137000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1269,13 +1272,13 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.42679355" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.42459735" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3881579" sideWeight="0.6105417" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3881579" sideWeight="0.6127379" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3881579" sideWeight="0.38945827" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3881579" sideWeight="0.38726208" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1304,8 +1307,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added isBalanced() method." />
-    <MESSAGE value="AVL balanced Tree template." />
     <MESSAGE value="Can create balanced binary trees." />
     <MESSAGE value="Refactored some names." />
     <MESSAGE value="Updated TreeNode for Graph implementation." />
@@ -1329,7 +1330,9 @@
     <MESSAGE value="Indentation done right." />
     <MESSAGE value="TrieNode structure, searchWord" />
     <MESSAGE value="Added basic demo, which doesn't work for now. &#10;Added searchWord." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added basic demo, which doesn't work for now. &#10;Added searchWord." />
+    <MESSAGE value="isLetterAChild() should be working fine now." />
+    <MESSAGE value="Now it works." />
+    <option name="LAST_COMMIT_MESSAGE" value="Now it works." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1733,33 +1736,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Trie/TrieDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="e#171#172#0" expanded="true" />
-            <element signature="e#218#219#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Trie/TrieManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="54" column="9" lean-forward="true" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#220#221#0" expanded="true" />
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#298#299#0" expanded="true" />
-            <element signature="e#366#367#0" expanded="true" />
-            <element signature="e#779#780#0" expanded="true" />
-            <element signature="e#827#828#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Trie/TrieNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
@@ -1771,6 +1747,35 @@
             <element signature="e#492#493#0" expanded="true" />
             <element signature="e#541#542#0" expanded="true" />
             <element signature="e#572#573#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Trie/TrieDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="27" column="91" lean-forward="false" selection-start-line="27" selection-start-column="91" selection-end-line="27" selection-end-column="91" />
+          <folding>
+            <element signature="e#171#172#0" expanded="true" />
+            <element signature="e#218#219#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Trie/TrieManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="55" column="9" lean-forward="true" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#220#221#0" expanded="true" />
+            <element signature="e#263#264#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
+            <element signature="e#769#770#0" expanded="true" />
+            <element signature="e#817#818#0" expanded="true" />
+            <element signature="e#1831#1832#0" expanded="true" />
+            <element signature="e#1860#1861#0" expanded="true" />
           </folding>
         </state>
       </provider>

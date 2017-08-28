@@ -13,14 +13,19 @@ public class TrieDemo {
     }
 
     public void getDemo() {
-        trieManager.insert("abc".toCharArray());
-        System.out.println(trieManager.search("abc".toCharArray()));
+        System.out.println("Inserting the word test ...");
+        trieManager.insert("est".toCharArray());
+        System.out.println("Is test in the trie : " + trieManager.search("abc".toCharArray()));
 
-        trieManager.insert("robert".toCharArray());
-        System.out.println(trieManager.search("robert".toCharArray()));
+        System.out.println("Inserting the word anotherTest");
+        trieManager.insert("anotherTest".toCharArray());
+        System.out.println("Is anotherTest in the trie: " + trieManager.search("anotherTest".toCharArray()));
 
+        System.out.println("Inserting the word anotherTast");
+        trieManager.insert("anotherTast".toCharArray());
+        System.out.println("Is anotherTest in the trie: " + trieManager.search("anotherTast".toCharArray()));
 
-        System.out.println(trieManager.search("roberttt".toCharArray()));
+        System.out.println("Is anotherTist in the trie: " + trieManager.search("anotherTist".toCharArray()));
         trieManager.printAllLetters(trieManager.getOrigin());
     }
 }
