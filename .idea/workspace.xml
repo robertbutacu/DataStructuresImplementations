@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="84f14702-2004-40df-87c6-b0c2efe87d91" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Trie/TrieDemo.java" afterPath="$PROJECT_DIR$/src/Trie/TrieDemo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Trie/TrieManager.java" afterPath="$PROJECT_DIR$/src/Trie/TrieManager.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -100,14 +99,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TrieManager.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TrieManager.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Trie/TrieManager.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="83" column="33" lean-forward="true" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
+              <caret line="83" column="35" lean-forward="false" selection-start-line="83" selection-start-column="35" selection-end-line="83" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3614#3630#0" expanded="true" />
+                <element signature="e#3626#3642#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -133,11 +132,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TrieDemo.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TrieDemo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Trie/TrieDemo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="83">
-              <caret line="35" column="8" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+              <caret line="35" column="27" lean-forward="false" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -213,8 +212,8 @@
         <option value="$PROJECT_DIR$/src/Trie/Either.java" />
         <option value="$PROJECT_DIR$/src/Either.java" />
         <option value="$PROJECT_DIR$/src/Utils/Either.java" />
-        <option value="$PROJECT_DIR$/src/Trie/TrieManager.java" />
         <option value="$PROJECT_DIR$/src/Trie/TrieDemo.java" />
+        <option value="$PROJECT_DIR$/src/Trie/TrieManager.java" />
       </list>
     </option>
   </component>
@@ -861,14 +860,7 @@
       <workItem from="1503908315772" duration="719000" />
       <workItem from="1503911004605" duration="6554000" />
       <workItem from="1503922494977" duration="3012000" />
-      <workItem from="1503925887053" duration="2616000" />
-    </task>
-    <task id="LOCAL-00017" summary="BST files created and TreeNode(beta) implementation.">
-      <created>1499279066892</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1499279066892</updated>
+      <workItem from="1503925887053" duration="2635000" />
     </task>
     <task id="LOCAL-00018" summary="BST Insert Method.">
       <created>1499281505076</created>
@@ -1206,11 +1198,18 @@
       <option name="project" value="LOCAL" />
       <updated>1503941628528</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="delete() now works as intended 2">
+      <created>1503942286075</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1503942286075</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98435000" />
+    <option name="totallyTimeSpent" value="98454000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1254,7 +1253,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Refactored UserManager.friendsList to a Set." />
     <MESSAGE value="Implemented UserPrinter and minor BST changes." />
     <MESSAGE value="Nuttin' much." />
     <MESSAGE value="Adjustments and demo creation. Bugs..." />
@@ -1279,7 +1277,8 @@
     <MESSAGE value="Added Either&lt;A,B&gt; class." />
     <MESSAGE value="Moved Either to another package.&#10;Added delete() - still needs work." />
     <MESSAGE value="delete() now works as intended" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete() now works as intended" />
+    <MESSAGE value="delete() now works as intended 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete() now works as intended 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1668,22 +1667,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Trie/TrieManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="83" column="33" lean-forward="true" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3614#3630#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Trie/TrieDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="83">
-          <caret line="35" column="8" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+          <caret line="35" column="27" lean-forward="false" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Trie/TrieManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="83" column="35" lean-forward="false" selection-start-line="83" selection-start-column="35" selection-end-line="83" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3626#3642#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
