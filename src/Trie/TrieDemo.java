@@ -14,7 +14,7 @@ public class TrieDemo {
 
     public void getDemo() {
         System.out.println("Inserting the word test ...");
-        trieManager.insert("est".toCharArray());
+        trieManager.insert("test".toCharArray());
         System.out.println("Is test in the trie : " + trieManager.search("abc".toCharArray()));
 
         System.out.println("Inserting the word anotherTest");

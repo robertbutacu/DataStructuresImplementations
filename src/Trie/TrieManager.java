@@ -53,6 +53,8 @@ public class TrieManager {
              ) {
             System.out.print(a.getCurrentChar() + " ");
             printAllLetters(a);
+            if(a.getChildren().size() == 0 )
+                System.out.println("");
         }
     }
 
