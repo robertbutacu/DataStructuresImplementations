@@ -26,4 +26,19 @@ public class TrieNode {
     public ArrayList<TrieNode> getChildren() {
         return children;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        TrieNode trieNode = (TrieNode) o;
+
+        return currentChar == trieNode.currentChar;
+    }
+
+    @Override
+    public int hashCode() {
+        return (int) currentChar;
+    }
 }
